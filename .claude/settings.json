@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(netstat -ano)",
+      "Bash(findstr \":80\\\\|:3000\\\\|:5500\\\\|:8080\\\\|:4000\")",
+      "Bash(findstr \"LISTENING\")",
+      "Bash(findstr \":3000\")",
+      "Bash(npx prisma *)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\SALAM\\eve-education\\prisma"
+    ]
+  }
+}

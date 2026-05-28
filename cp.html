@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CP — Cours Préparatoire en ligne — Institut Educ'Harmonia</title>
+  <meta name="description" content="Le CP chez Educ'Harmonia : l'année de toutes les découvertes. Méthode Singapour, pédagogie explicite, Soroban et éveil complet. Cours en direct sur Zoom, 100% en ligne." />
+  <meta property="og:title" content="CP — Cours Préparatoire en ligne — Educ'Harmonia" />
+  <meta property="og:description" content="Le CP chez Educ'Harmonia : méthode Singapour, pédagogie explicite, Soroban. Cours Zoom en direct, profs qualifiés, 100% en ligne." />
+  <meta property="og:image" content="logo-banniere.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CP — Cours Préparatoire en ligne — Educ'Harmonia" />
+  <meta name="twitter:description" content="Le CP chez Educ'Harmonia : méthode Singapour, pédagogie explicite, Soroban. Cours Zoom en direct." />
+  <meta name="twitter:image" content="logo-banniere.jpeg" />
+  <link rel="canonical" href="https://www.educ-harmonia.fr/cp.html" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── COULEURS CP : orange ── */
+    :root {
+      --cp-main:  #f97316;
+      --cp-light: #fff7ed;
+      --cp-mid:   #fed7aa;
+      --cp-dark:  #ea580c;
+    }
+
+    .cp-hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 4px solid var(--cp-main);
+      padding: 140px 24px 100px;
+      text-align: center;
+      min-height: 100vh;
+    }
+    .cp-hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      z-index: 0;
+    }
+    .cp-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.45) 100%);
+      z-index: 1;
+    }
+    .cp-hero > *:not(.cp-hero-img):not(.cp-hero-overlay) {
+      position: relative;
+      z-index: 2;
+    }
+
+    .cp-badge {
+      display: inline-block;
+      background: var(--cp-main);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .cp-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .cp-hero h1 em {
+      font-style: normal;
+      font-family: 'Lora', serif;
+      color: #fed7aa;
+      background: none;
+      -webkit-text-fill-color: #fed7aa;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .cp-hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.92);
+      max-width: 660px;
+      margin: 0 auto 32px;
+      line-height: 1.75;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    }
+    .cp-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--cp-main);
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 10px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(249,115,22,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+    .cp-back:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(249,115,22,0.3); }
+
+    /* ── CONTENU ── */
+    .cp-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .cp-bloc {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 40px 44px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border-top: 5px solid var(--cp-main);
+    }
+    .cp-bloc-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--cp-main);
+      margin-bottom: 20px;
+    }
+    .cp-bloc h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+
+    /* Items méthodes */
+    .cp-methode-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .cp-methode-item {
+      background: var(--cp-light);
+      border-radius: 16px;
+      padding: 24px 28px;
+      border-left: 5px solid var(--cp-main);
+    }
+    .cp-methode-item h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 8px;
+    }
+    .cp-methode-item p {
+      color: #57534e;
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+
+    /* Soroban spotlight */
+    .cp-soroban {
+      background: linear-gradient(135deg, #fff7ed, #ffedd5);
+      border-radius: 20px;
+      padding: 32px 36px;
+      border: 2px solid var(--cp-mid);
+      margin-bottom: 0;
+    }
+    .cp-soroban-title {
+      font-size: 1.1rem;
+      font-weight: 900;
+      color: var(--cp-dark);
+      margin-bottom: 18px;
+    }
+    .cp-soroban-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .cp-soroban-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .cp-soroban-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: var(--cp-main);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      margin-top: 2px;
+    }
+    .cp-soroban-text h4 {
+      font-size: 0.95rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 4px;
+    }
+    .cp-soroban-text p {
+      color: #57534e;
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    /* Éveil grid */
+    .cp-eveil-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .cp-eveil-card {
+      background: var(--cp-light);
+      border-radius: 16px;
+      padding: 24px;
+      border-left: 5px solid #fb923c;
+    }
+    .cp-eveil-card h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 8px;
+    }
+    .cp-eveil-card p {
+      color: #57534e;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* Promesse / CTA */
+    .cp-promesse {
+      background: linear-gradient(135deg, var(--cp-main), #fb923c);
+      border-radius: 24px;
+      padding: 48px;
+      color: white;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .cp-promesse h2 {
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    .cp-promesse p {
+      color: rgba(255,255,255,0.92);
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin: 0 auto 16px;
+      line-height: 1.75;
+    }
+    .cp-objectif {
+      background: rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 20px 28px;
+      margin: 20px auto;
+      max-width: 580px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: white;
+      line-height: 1.7;
+    }
+    .cp-conclusion {
+      font-style: italic;
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.95);
+      margin: 16px 0 28px;
+    }
+    .cp-promesse a {
+      display: inline-block;
+      background: white;
+      color: var(--cp-main);
+      font-weight: 900;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+    .cp-promesse a:hover { transform: translateY(-2px); }
+
+    @media (max-width: 640px) {
+      .cp-eveil-grid { grid-template-columns: 1fr; }
+      .cp-bloc { padding: 28px 20px; }
+      .cp-soroban { padding: 24px 20px; }
+      .cp-promesse { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-banniere.jpeg" alt="Educ'Harmonia" class="logo-img" />
+      <span class="nav-brand-wrap">
+        <span class="nav-brand">Institut Educ'Harmonia</span>
+        <span class="nav-tagline">— 100% en ligne —</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#approche">Notre approche</a></li>
+      <li><a href="index.html#methodes">Nos méthodes</a></li>
+      <li><a href="index.html#classes">Les classes</a></li>
+      <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/33652182898" class="btn-nav" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#approche" class="mobile-link">Notre approche</a></li>
+      <li><a href="index.html#methodes" class="mobile-link">Nos méthodes</a></li>
+      <li><a href="index.html#classes" class="mobile-link">Les classes</a></li>
+      <li><a href="index.html#fonctionnement" class="mobile-link">Fonctionnement</a></li>
+      <li><a href="index.html#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="https://wa.me/33652182898" class="btn-nav mobile-cta" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="cp-hero">
+  <img src="hero-cp.jpeg" alt="Classe CP — Educ'Harmonia" class="cp-hero-img" loading="eager" />
+  <div class="cp-hero-overlay"></div>
+  <div class="cp-badge">📖 Cours Préparatoire</div>
+  <h1>Le CP chez Educ'Harmonia :<br><em>L'Année de toutes les Découvertes.</em></h1>
+  <p>Le Cours Préparatoire est le fondement de la scolarité. Notre ambition est de transformer ce défi en une série de succès stimulants pour chaque enfant, en alliant la rigueur des méthodes mondiales à la chaleur d'un cadre authentique.</p>
+  <a href="index.html#classes" class="cp-back">← Retour aux classes</a>
+</section>
+
+<!-- CONTENU -->
+<div class="cp-content">
+
+  <!-- Fondamentaux -->
+  <div class="cp-bloc reveal">
+    <div class="cp-bloc-tag">📖 Maîtriser les Fondamentaux avec Assurance</div>
+    <div class="cp-methode-list">
+      <div class="cp-methode-item">
+        <h3>📖 Français — Méthode Explicite</h3>
+        <p>Nous pratiquons un enseignement direct du code alphabétique. Chaque phonème et chaque règle de grammaire sont expliqués clairement, modélisés par l'enseignant, puis pratiqués par l'élève jusqu'à l'automatisation. Votre enfant ne devine pas les mots : il apprend à les lire avec précision et fluidité.</p>
+      </div>
+      <div class="cp-methode-item">
+        <h3>🔢 Mathématiques — Méthode de Singapour</h3>
+        <p>Au CP, nous approfondissons la résolution de problèmes. Grâce à la manipulation de matériel concret (cubes, barres), les concepts de dizaines, d'unités et d'additions deviennent visuels et logiques avant d'être posés sur le papier.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Soroban -->
+  <div class="cp-bloc reveal">
+    <div class="cp-bloc-tag">🧮 L'Atout Calcul : Le Soroban</div>
+    <p style="color:#57534e; margin-bottom:24px; line-height:1.75;">Nouveauté phare du CP, l'initiation au boulier japonais (Soroban) développe des aptitudes cognitives uniques :</p>
+    <div class="cp-soroban">
+      <div class="cp-soroban-list">
+        <div class="cp-soroban-item">
+          <div class="cp-soroban-icon">🧠</div>
+          <div class="cp-soroban-text">
+            <h4>Calcul Mental Prodigieux</h4>
+            <p>En visualisant les perles, l'enfant développe une agilité mentale exceptionnelle qui dépasse largement le calcul traditionnel.</p>
+          </div>
+        </div>
+        <div class="cp-soroban-item">
+          <div class="cp-soroban-icon">🎯</div>
+          <div class="cp-soroban-text">
+            <h4>Concentration</h4>
+            <p>Cette pratique renforce la focalisation et la mémoire de travail, des compétences utiles dans toutes les autres matières.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Éveil -->
+  <div class="cp-bloc reveal">
+    <div class="cp-bloc-tag">🎨 Éveil, Culture et Curiosité</div>
+    <p style="color:#57534e; margin-bottom:24px; line-height:1.75;">Parce qu'un enfant épanoui apprend mieux, nous enrichissons chaque journée avec des activités d'éveil stimulantes :</p>
+    <div class="cp-eveil-grid">
+      <div class="cp-eveil-card">
+        <h3>🌍 Découverte du Monde</h3>
+        <p>Nous passons de l'observation à la compréhension. L'enfant explore le vivant, la matière et les outils numériques tout en structurant ses connaissances sur l'histoire et la géographie.</p>
+      </div>
+      <div class="cp-eveil-card">
+        <h3>🎨 Arts Plastiques</h3>
+        <p>L'art devient un support d'apprentissage. En plus de libérer sa créativité, l'élève affine sa gestion de l'espace et sa précision graphique, complétant ainsi son apprentissage de l'écriture.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Promesse -->
+  <div class="cp-promesse reveal">
+    <h2>🌟 La Promesse Educ'Harmonia</h2>
+    <p>Nous savons que le CP peut impressionner les parents. C'est pourquoi nous maintenons un lien étroit entre la modernité de nos outils interactifs et l'authenticité des supports physiques (le bois, le papier, le boulier).</p>
+    <div class="cp-objectif">
+      🎯 <strong>Notre objectif :</strong> Que votre enfant rentre chaque soir fier d'avoir lu une nouvelle phrase ou résolu un problème complexe, avec une envie débordante de recommencer le lendemain.
+    </div>
+    <p class="cp-conclusion">Le CP chez nous, c'est l'excellence qui donne le sourire.</p>
+    <a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">💬 Inscrire mon enfant au CP</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Educ'Harmonia" class="footer-logo" />
+        <span>Educ'Harmonia</span>
+      </div>
+      <p>École primaire 100% en ligne, de la Grande Section au CM2.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html#approche">Notre approche</a></li>
+        <li><a href="index.html#methodes">Nos méthodes</a></li>
+        <li><a href="index.html#classes">Les classes</a></li>
+        <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:contact@educ-harmonia.fr">📧 contact@educ-harmonia.fr</a></li>
+        <li><a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">📱 06 52 18 28 98</a></li>
+        <li>🌐 www.educ-harmonia.fr</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Educ'Harmonia — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

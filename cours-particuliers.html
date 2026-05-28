@@ -1,0 +1,607 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cours Particuliers & Soutien Scolaire — Institut Educ'Harmonia</title>
+  <meta name="description" content="Cours particuliers personnalisés de la maternelle au collège : maths, français, calcul mental Soroban, mémorisation des tables, arts plastiques. Premier bilan gratuit." />
+  <meta property="og:title" content="Cours Particuliers & Soutien Scolaire — Institut Educ'Harmonia" />
+  <meta property="og:description" content="Accompagnement personnalisé de la maternelle au collège. Maths, français, Soroban, arts plastiques. Premier bilan gratuit." />
+  <meta property="og:image" content="logo-banniere.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Cours Particuliers — Institut Educ'Harmonia" />
+  <meta name="twitter:description" content="Accompagnement personnalisé de la maternelle au collège. Premier bilan gratuit." />
+  <meta name="twitter:image" content="logo-banniere.jpeg" />
+  <link rel="canonical" href="https://www.educ-harmonia.fr/cours-particuliers.html" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── HERO ── */
+    .cp-hero {
+      position: relative;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 140px 24px 100px;
+      background-image: url('hero-soutient.jpeg');
+      background-size: cover;
+      background-position: center;
+      overflow: hidden;
+    }
+    .cp-hero-content { z-index: 2; position: relative; }
+    .cp-hero h1 { text-shadow: 0 2px 12px rgba(0,0,0,0.7); }
+    .cp-hero-sub { text-shadow: 0 2px 16px rgba(0,0,0,0.9), 0 1px 4px rgba(0,0,0,0.9); color: #fff; font-weight: 700; }
+    .cp-hero-badge { text-shadow: none; }
+    .cp-hero-deco {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      pointer-events: none;
+    }
+    .cp-hero-deco-1 { width: 500px; height: 500px; top: -200px; right: -150px; }
+    .cp-hero-deco-2 { width: 350px; height: 350px; bottom: -150px; left: -100px; }
+    .cp-hero-content { position: relative; z-index: 2; max-width: 780px; margin: 0 auto; }
+    .cp-hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 50px;
+      border: 1px solid rgba(255,255,255,0.3);
+      margin-bottom: 24px;
+    }
+    .cp-hero h1 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .cp-hero h1 em {
+      font-style: normal;
+      color: #18B7A0;
+    }
+    .cp-hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 580px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .cp-hero-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .cp-hero-btns .btn-primary {
+      background: #fff;
+      color: #0D2D6C;
+      font-weight: 800;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cp-hero-btns .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.25); }
+    .cp-hero-btns .btn-outline {
+      background: transparent;
+      color: #fff;
+      font-weight: 700;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      border: 2px solid rgba(255,255,255,0.5);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .cp-hero-btns .btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.08); }
+
+
+    /* ── MATIÈRES ── */
+    .cp-matieres {
+      background: linear-gradient(135deg, #071a45 0%, #0D2D6C 40%, #1a5f7a 75%, #18B7A0 100%);
+      padding: 80px 24px;
+    }
+    .cp-matieres .section-header h2,
+    .cp-matieres .section-header p { color: #fff; }
+    .cp-matieres .section-header p { opacity: 0.85; }
+    .cp-matieres .tag { background: rgba(255,255,255,0.15); color: #fff; border: 1px solid rgba(255,255,255,0.3); }
+    .cp-matieres-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1000px;
+      margin: 48px auto 0;
+    }
+    .cp-matiere-card {
+      border-radius: 24px;
+      padding: 36px 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: transform 0.25s, box-shadow 0.25s;
+      cursor: default;
+      position: relative;
+      overflow: hidden;
+    }
+    .cp-matiere-card:hover { transform: translateY(-7px); box-shadow: 0 16px 48px rgba(0,0,0,0.12); }
+    .cp-matiere-card.bleu   { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); border: none; border-left: 5px solid #3b82f6; }
+    .cp-matiere-card.vert   { background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%); border: none; border-left: 5px solid #22c55e; }
+    .cp-matiere-card.orange { background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%); border: none; border-left: 5px solid #f97316; }
+    .cp-matiere-card.rose   { background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%); border: none; border-left: 5px solid #fb7185; }
+    .cp-matiere-card.violet { background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%); border: none; border-left: 5px solid #a855f7; }
+    .cp-matiere-icon {
+      font-size: 2.4rem;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 64px; height: 64px;
+      background: rgba(255,255,255,0.7);
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .cp-matiere-card h3 { font-size: 1.15rem; font-weight: 800; color: #1c1917; }
+    .cp-matiere-card p  { font-size: 0.91rem; color: #44403c; line-height: 1.65; flex: 1; }
+    .cp-matiere-niveaux {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 5px 14px;
+      border-radius: 50px;
+      background: rgba(255,255,255,0.8);
+      color: #1c1917;
+      align-self: flex-start;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+
+    /* ── FORMULES ── */
+    .cp-formules {
+      background: var(--creme, #fdfbf5);
+      padding: 80px 24px;
+    }
+    .cp-formules-bloc {
+      max-width: 960px;
+      margin: 0 auto 56px;
+    }
+    .cp-formules-bloc:last-child { margin-bottom: 0; }
+    .cp-formules-bloc-titre {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .cp-formules-bloc-titre h3 {
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: #0D2D6C;
+    }
+    .cp-formules-bloc-titre .cp-type-badge {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 5px 14px;
+      border-radius: 50px;
+    }
+    .cp-type-badge.particulier { background: #dbeafe; color: #1d4ed8; }
+    .cp-type-badge.collectif   { background: #dcfce7; color: #15803d; }
+    .cp-formules-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 960px;
+      margin: 48px auto 0;
+    }
+    .cp-formule-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 36px 28px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      border: 2px solid #e7e5e4;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+      cursor: pointer;
+    }
+    .cp-formule-card:hover { transform: translateY(-6px); box-shadow: 0 12px 36px rgba(0,0,0,0.12); border-color: #0D2D6C; }
+    .cp-formule-card.populaire { border: 2px solid #0D2D6C; box-shadow: 0 8px 32px rgba(13,45,108,0.15); }
+    .cp-formule-badge {
+      display: inline-block;
+      background: #0D2D6C;
+      color: #fff;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 4px 14px;
+      border-radius: 50px;
+      align-self: flex-start;
+    }
+    .cp-formule-titre { font-size: 1.15rem; font-weight: 800; color: #1c1917; }
+    .cp-formule-prix { display: flex; align-items: baseline; gap: 4px; }
+    .cp-formule-montant { font-size: 2.8rem; font-weight: 900; color: #0D2D6C; line-height: 1; }
+    .cp-formule-devise { font-size: 1.1rem; font-weight: 700; color: #0D2D6C; }
+    .cp-formule-detail { font-size: 0.85rem; color: #78716c; }
+    .cp-formule-sep { border: none; border-top: 1px solid #e7e5e4; margin: 4px 0; }
+    .cp-formule-liste { list-style: none; display: flex; flex-direction: column; gap: 7px; flex: 1; }
+    .cp-formule-liste li { font-size: 0.9rem; color: #44403c; font-weight: 600; }
+    .cp-formule-btn {
+      display: block;
+      text-align: center;
+      padding: 13px;
+      border-radius: 12px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none;
+      margin-top: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cp-formule-btn-primary { background: #0D2D6C; color: #fff; box-shadow: 0 4px 16px rgba(13,45,108,0.25); }
+    .cp-formule-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(13,45,108,0.35); }
+    .cp-formule-btn-secondary { background: #fff; color: #1c1917; border: 2px solid #e7e5e4; }
+    .cp-formule-btn-secondary:hover { border-color: #0D2D6C; color: #0D2D6C; }
+
+    /* ── CITATION ── */
+    .cp-citation {
+      background: #fff;
+      padding: 72px 24px;
+      text-align: center;
+    }
+    .cp-citation blockquote {
+      max-width: 700px;
+      margin: 0 auto;
+      font-family: 'Lora', serif;
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-style: italic;
+      color: #0D2D6C;
+      line-height: 1.7;
+    }
+    .cp-citation cite {
+      display: block;
+      margin-top: 20px;
+      font-size: 0.88rem;
+      font-style: normal;
+      color: #78716c;
+      font-family: 'Nunito', sans-serif;
+    }
+
+    /* ── CTA ── */
+    .cp-cta {
+      background: linear-gradient(135deg, #071a45 0%, #0D2D6C 40%, #18B7A0 100%);
+      padding: 80px 24px;
+      text-align: center;
+    }
+    .cp-cta h2 { font-size: clamp(1.6rem, 3.5vw, 2.4rem); font-weight: 900; color: #fff; margin-bottom: 16px; }
+    .cp-cta p  { font-size: 1rem; color: rgba(255,255,255,0.85); max-width: 520px; margin: 0 auto 36px; }
+    .cp-cta .btn-primary {
+      background: #fff;
+      color: #0D2D6C;
+      font-weight: 800;
+      padding: 16px 40px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1.05rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+      display: inline-block;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .cp-cta .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,0.25); }
+
+    @media (max-width: 768px) {
+      .cp-atouts, .cp-methodes-grid, .cp-formules-grid { grid-template-columns: 1fr; }
+      .cp-formules-bloc-titre { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-banniere.jpeg" alt="Educ'Harmonia" class="logo-img" />
+      <span class="nav-brand-wrap">
+        <span class="nav-brand">Institut Educ'Harmonia</span>
+        <span class="nav-tagline">— 100% en ligne —</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#approche">Notre approche</a></li>
+      <li><a href="index.html#classes">Les classes</a></li>
+      <li><a href="index.html#tarifs">Tarifs</a></li>
+      <li><a href="ateliers.html">Ateliers</a></li>
+    </ul>
+    <a href="index.html#formulaire" class="btn-nav">Inscrire mon enfant</a>
+    <a href="http://localhost:3000/login" class="btn-login" target="_blank" rel="noopener noreferrer">🔑 Espace élève / prof</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="cp-hero">
+  <div class="cp-hero-deco cp-hero-deco-1"></div>
+  <div class="cp-hero-deco cp-hero-deco-2"></div>
+  <div class="cp-hero-content">
+    <span class="cp-hero-badge">📚 Cours particuliers</span>
+    <h1>Boostez votre potentiel :<br><em>Soutien Scolaire & Ateliers d'Éveil</em></h1>
+    <p class="cp-hero-sub">Apprendre n'a jamais été aussi stimulant ! Un accompagnement personnalisé, adapté au rythme de chaque élève — de la maternelle au collège.</p>
+    <div class="cp-hero-btns">
+      <a href="#formules" class="btn-primary">Voir les formules</a>
+      <a href="index.html#formulaire" class="btn-outline">Bilan gratuit</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- MATIÈRES -->
+<section class="cp-matieres">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-vert">📖 Nos matières & spécialités</span>
+      <h2>Un accompagnement complet</h2>
+      <p>De la maternelle au collège, dans toutes les disciplines essentielles.</p>
+    </div>
+    <div class="cp-matieres-grid">
+
+      <div class="cp-matiere-card bleu reveal">
+        <div class="cp-matiere-icon">➗</div>
+        <h3>Mathématiques</h3>
+        <p>Réconcilier l'élève avec les chiffres, maîtriser le programme scolaire et développer la logique.</p>
+        <span class="cp-matiere-niveaux">Maternelle → Collège</span>
+      </div>
+
+      <div class="cp-matiere-card vert reveal">
+        <div class="cp-matiere-icon">📝</div>
+        <h3>Français</h3>
+        <p>Lecture, orthographe, grammaire et expression écrite pour une communication fluide et assurée.</p>
+        <span class="cp-matiere-niveaux">Maternelle → Collège</span>
+      </div>
+
+      <div class="cp-matiere-card orange reveal">
+        <div class="cp-matiere-icon">🧮</div>
+        <h3>Calcul Mental Soroban</h3>
+        <p>Apprentissage sur le boulier japonais pour une rapidité de calcul exceptionnelle et une meilleure concentration.</p>
+        <span class="cp-matiere-niveaux">GS → CM2</span>
+      </div>
+
+      <div class="cp-matiere-card rose reveal">
+        <div class="cp-matiere-icon">✖️</div>
+        <h3>Mémorisation des Tables</h3>
+        <p>Fini le "par cœur" laborieux ! Techniques de mémorisation ludiques et infaillibles basées sur l'imagerie mentale.</p>
+        <span class="cp-matiere-niveaux">CE1 → CM2</span>
+      </div>
+
+      <div class="cp-matiere-card violet reveal">
+        <div class="cp-matiere-icon">🎨</div>
+        <h3>Arts Plastiques</h3>
+        <p>Libérer la créativité, explorer différentes techniques et développer la motricité fine.</p>
+        <span class="cp-matiere-niveaux">Maternelle → Collège</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FORMULES -->
+<section id="formules" class="cp-formules">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-bleu">💳 Formules</span>
+      <h2>Choisissez votre formule</h2>
+      <p>Des tarifs transparents, sans frais cachés. Premier bilan gratuit et sans engagement.</p>
+    </div>
+
+    <!-- COURS PARTICULIERS -->
+    <div class="cp-formules-bloc reveal">
+      <div class="cp-formules-bloc-titre">
+        <h3>👤 Cours particuliers</h3>
+        <span class="cp-type-badge particulier">1 élève</span>
+      </div>
+      <div class="cp-formules-grid">
+
+        <div class="cp-formule-card reveal">
+          <div class="cp-formule-titre">Séance unitaire</div>
+          <div class="cp-formule-prix">
+            <span class="cp-formule-montant">49</span>
+            <span class="cp-formule-devise">€ <small>HT</small></span>
+          </div>
+          <div class="cp-formule-detail">1 séance d'1h / semaine</div>
+          <hr class="cp-formule-sep" />
+          <ul class="cp-formule-liste">
+            <li>✓ Sans engagement</li>
+            <li>✓ Toutes matières</li>
+            <li>✓ Cours en visio Zoom</li>
+            <li>✓ Bilan initial inclus</li>
+          </ul>
+          <a href="index.html#formulaire" class="cp-formule-btn cp-formule-btn-secondary">Je réserve</a>
+        </div>
+
+        <div class="cp-formule-card populaire reveal">
+          <div class="cp-formule-badge">Populaire</div>
+          <div class="cp-formule-titre">Pack pluridisciplinaire</div>
+          <div class="cp-formule-prix">
+            <span class="cp-formule-montant">90</span>
+            <span class="cp-formule-devise">€ <small>HT</small></span>
+          </div>
+          <div class="cp-formule-detail">2 séances d'1h / semaine</div>
+          <hr class="cp-formule-sep" />
+          <ul class="cp-formule-liste">
+            <li>✓ 2 matières au choix</li>
+            <li>✓ Suivi personnalisé</li>
+            <li>✓ Cours en visio Zoom</li>
+            <li>✓ Bilan mensuel inclus</li>
+          </ul>
+          <a href="index.html#formulaire" class="cp-formule-btn cp-formule-btn-primary">Je choisis</a>
+        </div>
+
+        <div class="cp-formule-card reveal">
+          <div class="cp-formule-badge" style="background:#18B7A0;">Premium</div>
+          <div class="cp-formule-titre">Pack premium</div>
+          <div class="cp-formule-prix">
+            <span class="cp-formule-montant">139</span>
+            <span class="cp-formule-devise">€ <small>HT</small></span>
+          </div>
+          <div class="cp-formule-detail">3 séances d'1h / semaine</div>
+          <hr class="cp-formule-sep" />
+          <ul class="cp-formule-liste">
+            <li>✓ 3 matières au choix</li>
+            <li>✓ Suivi renforcé</li>
+            <li>✓ Cours en visio Zoom</li>
+            <li>✓ Bilan mensuel inclus</li>
+          </ul>
+          <a href="index.html#formulaire" class="cp-formule-btn cp-formule-btn-secondary">Je choisis</a>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ATELIER AU CHOIX -->
+    <div class="cp-formules-bloc reveal">
+      <div class="cp-formules-bloc-titre">
+        <h3>🎨 Atelier au choix</h3>
+        <span class="cp-type-badge collectif">Collectif — 5 élèves max</span>
+      </div>
+      <div style="max-width: 340px;">
+        <div class="cp-formule-card reveal">
+          <div class="cp-formule-titre">Arts Plastiques <em style="font-style:normal;color:#78716c;font-size:0.85rem;">·</em> Calcul Mental Soroban <em style="font-style:normal;color:#78716c;font-size:0.85rem;">·</em> Tables de Multiplication</div>
+          <div class="cp-formule-prix">
+            <span class="cp-formule-montant">29</span>
+            <span class="cp-formule-devise">€ <small>HT</small></span>
+          </div>
+          <div class="cp-formule-detail">1 séance d'1h / semaine</div>
+          <hr class="cp-formule-sep" />
+          <ul class="cp-formule-liste">
+            <li>✓ 1 atelier au choix</li>
+            <li>✓ Groupe de 5 max</li>
+            <li>✓ Cours en visio Zoom</li>
+            <li>✓ Bilan initial inclus</li>
+          </ul>
+          <a href="index.html#formulaire" class="cp-formule-btn cp-formule-btn-secondary">Je réserve</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- COURS COLLECTIFS -->
+    <div class="cp-formules-bloc reveal">
+      <div class="cp-formules-bloc-titre">
+        <h3>👥 Cours collectifs</h3>
+        <span class="cp-type-badge collectif">5 élèves max</span>
+      </div>
+      <div class="cp-formules-grid">
+
+        <div class="cp-formule-card reveal">
+          <div class="cp-formule-titre">Séance unitaire</div>
+          <div class="cp-formule-prix">
+            <span class="cp-formule-montant">35</span>
+            <span class="cp-formule-devise">€ <small>HT</small></span>
+          </div>
+          <div class="cp-formule-detail">1h15 / séance — 4 séances / semaine</div>
+          <hr class="cp-formule-sep" />
+          <ul class="cp-formule-liste">
+            <li>✓ Groupe de 5 max</li>
+            <li>✓ Toutes matières</li>
+            <li>✓ Cours en visio Zoom</li>
+            <li>✓ Bilan initial inclus</li>
+          </ul>
+          <a href="index.html#formulaire" class="cp-formule-btn cp-formule-btn-secondary">Je réserve</a>
+        </div>
+
+        <div class="cp-formule-card populaire reveal">
+          <div class="cp-formule-badge">Populaire</div>
+          <div class="cp-formule-titre">Pack pluridisciplinaire</div>
+          <div class="cp-formule-prix">
+            <span class="cp-formule-montant">69</span>
+            <span class="cp-formule-devise">€ <small>HT</small></span>
+          </div>
+          <div class="cp-formule-detail">2 séances d'1h / semaine</div>
+          <hr class="cp-formule-sep" />
+          <ul class="cp-formule-liste">
+            <li>✓ Groupe de 5 max</li>
+            <li>✓ 2 matières au choix</li>
+            <li>✓ Cours en visio Zoom</li>
+            <li>✓ Bilan mensuel inclus</li>
+          </ul>
+          <a href="index.html#formulaire" class="cp-formule-btn cp-formule-btn-primary">Je choisis</a>
+        </div>
+
+        <div class="cp-formule-card reveal">
+          <div class="cp-formule-badge" style="background:#18B7A0;">Premium</div>
+          <div class="cp-formule-titre">Pack premium</div>
+          <div class="cp-formule-prix">
+            <span class="cp-formule-montant">105</span>
+            <span class="cp-formule-devise">€ <small>HT</small></span>
+          </div>
+          <div class="cp-formule-detail">3 séances d'1h / semaine</div>
+          <hr class="cp-formule-sep" />
+          <ul class="cp-formule-liste">
+            <li>✓ Groupe de 5 max</li>
+            <li>✓ 3 matières au choix</li>
+            <li>✓ Cours en visio Zoom</li>
+            <li>✓ Bilan mensuel inclus</li>
+          </ul>
+          <a href="index.html#formulaire" class="cp-formule-btn cp-formule-btn-secondary">Je choisis</a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CITATION -->
+<section class="cp-citation">
+  <div class="container">
+    <blockquote class="reveal">
+      "L'éducation n'est pas le remplissage d'un vase, mais l'allumage d'un feu."
+      <cite>— William Butler Yeats</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cp-cta">
+  <div class="container">
+    <h2 class="reveal">Prêt à commencer l'aventure ?</h2>
+    <p class="reveal">Contactez-nous dès aujourd'hui pour un premier bilan gratuit ou pour réserver votre créneau.</p>
+    <a href="index.html#formulaire" class="btn-primary reveal">Réserver mon bilan gratuit</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#071a45;color:rgba(255,255,255,0.7);text-align:center;padding:32px 24px;font-size:0.88rem;">
+  <p style="margin-bottom:10px;">
+    <a href="index.html" style="color:#18B7A0;font-weight:700;text-decoration:none;">Accueil</a>
+    &nbsp;·&nbsp;
+    <a href="ateliers.html" style="color:#18B7A0;font-weight:700;text-decoration:none;">Ateliers</a>
+    &nbsp;·&nbsp;
+    <a href="index.html#tarifs" style="color:#18B7A0;font-weight:700;text-decoration:none;">Tarifs</a>
+    &nbsp;·&nbsp;
+    <a href="index.html#formulaire" style="color:#18B7A0;font-weight:700;text-decoration:none;">Inscription</a>
+  </p>
+  <p>© 2025 Institut Educ'Harmonia — Tous droits réservés</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

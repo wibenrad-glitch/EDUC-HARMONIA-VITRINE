@@ -1,0 +1,992 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Educ'Harmonia — École primaire 100% en ligne | GS au CM2</title>
+  <meta name="description" content="Educ'Harmonia, école primaire 100% en ligne de la Grande Section au CM2. Méthode Singapour en maths, enseignement explicite en français. Cours Zoom en direct, profs qualifiés, suivi personnalisé." />
+  <meta property="og:title" content="Institut Educ'Harmonia — École primaire 100% en ligne" />
+  <meta property="og:description" content="De la Grande Section au CM2 : méthode Singapour, enseignement explicite, cours en direct sur Zoom. Rejoignez Educ'Harmonia !" />
+  <meta property="og:image" content="logo-banniere.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Institut Educ'Harmonia — École primaire 100% en ligne" />
+  <meta name="twitter:description" content="De la Grande Section au CM2 : méthode Singapour, enseignement explicite, cours en direct sur Zoom." />
+  <meta name="twitter:image" content="logo-banniere.jpeg" />
+  <link rel="canonical" href="https://www.educ-harmonia.fr/index.html" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Institut Educ'Harmonia",
+    "description": "École primaire 100% en ligne de la Moyenne Section au CM2. Méthode Singapour en maths, enseignement explicite en français.",
+    "url": "https://www.educ-harmonia.fr",
+    "logo": "https://www.educ-harmonia.fr/logo-banniere.jpeg",
+    "email": "contact@educ-harmonia.fr",
+    "inLanguage": "fr",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "FR"
+    },
+    "sameAs": []
+  }
+  </script>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     BANDEAU PROMO
+═══════════════════════════════════════════ -->
+<div id="bandeau-promo">
+  <div class="bandeau-promo-inner">
+    <span class="bandeau-promo-star">⭐</span>
+    <div class="bandeau-promo-texte">
+      <strong>Offre de rentrée</strong>
+      <span>−30 % sur la Grande Section pour toute inscription simultanée d'un frère ou d'une sœur en CP–CM2.</span>
+    </div>
+    <a href="#formulaire" class="bandeau-promo-btn">J'en profite</a>
+  </div>
+  <button id="bandeau-close" aria-label="Fermer">✕</button>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+═══════════════════════════════════════════ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-banniere.jpeg" alt="Educ'Harmonia" class="logo-img" />
+      <span class="nav-brand-wrap">
+        <span class="nav-brand">Institut Educ'Harmonia</span>
+        <span class="nav-tagline">— 100% en ligne —</span>
+      </span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#approche">Notre approche</a></li>
+      <li><a href="#methodes">Nos méthodes</a></li>
+      <li><a href="#classes">Les classes</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#tarifs">Tarifs</a></li>
+      <li><a href="cours-particuliers.html">Cours particuliers</a></li>
+    </ul>
+
+    <a href="#formulaire" class="btn-nav">Inscrire mon enfant</a>
+    <a href="http://localhost:3000/login" class="btn-login" target="_blank" rel="noopener noreferrer">🔑 Espace élève / prof</a>
+
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#approche" class="mobile-link">Notre approche</a></li>
+      <li><a href="#methodes" class="mobile-link">Nos méthodes</a></li>
+      <li><a href="#classes" class="mobile-link">Les classes</a></li>
+      <li><a href="#fonctionnement" class="mobile-link">Fonctionnement</a></li>
+      <li><a href="#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="https://wa.me/33652182898" class="btn-nav mobile-cta" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a></li>
+      <li><a href="http://localhost:3000/login" class="btn-login mobile-cta" target="_blank" rel="noopener noreferrer">🔑 Espace élève / prof</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ═══════════════════════════════════════════
+     HERO — ACCROCHE + 2 MÉTHODES
+═══════════════════════════════════════════ -->
+<section class="hero hero-accroche">
+
+  <!-- Image hero plein écran + boutons superposés -->
+  <div class="hero-img-top reveal">
+    <img src="hero-principal-flamme.jpeg" alt="Educ'Harmonia — Rigueur pour réussir, créativité pour s'épanouir" loading="eager" />
+    <div class="hero-img-btns">
+      <a href="#methodes" class="hero-img-btn-primary">Découvrir nos cours →</a>
+      <a href="#presentation" class="hero-img-btn-secondary">En savoir plus</a>
+    </div>
+  </div>
+
+  <div class="hero-accroche-inner">
+    <div class="hero-badge-duo reveal">🖥️ École à distance · 100% en ligne · GS au CM2</div>
+    <h1 class="reveal">La méthode pour réussir.<br><em>Le plaisir pour s'épanouir.</em></h1>
+    <p class="hero-accroche-sub reveal">Educ'Harmonia est une école qui croit que l'excellence et le bonheur d'apprendre vont de pair — des méthodes exigeantes, un environnement qui donne envie.</p>
+  </div>
+
+  <!-- Carrousel des 5 cartes -->
+  <div class="hero-cards-wrapper">
+    <div class="carrousel-track">
+
+      <!-- Carte Singapour -->
+      <div class="duo-card duo-card-maths">
+        <div class="duo-img">
+          <img src="carte-flamme-singapour.jpeg" alt="Méthode Singapour" loading="lazy" />
+        </div>
+        <a href="#methodes" class="duo-btn duo-btn-maths">Découvrir →</a>
+      </div>
+
+      <!-- Carte Explicite -->
+      <div class="duo-card duo-card-francais">
+        <div class="duo-img">
+          <img src="carte-flamme-francais.jpeg" alt="Enseignement Explicite" loading="lazy" />
+        </div>
+        <a href="#explicite" class="duo-btn duo-btn-francais">Découvrir →</a>
+      </div>
+
+      <!-- Carte Arts plastiques -->
+      <div class="duo-card duo-card-creat">
+        <div class="duo-img">
+          <img src="carte-flamme-soroban.jpeg" alt="Arts plastiques" loading="lazy" />
+        </div>
+        <a href="ateliers.html#arts" class="duo-btn duo-btn-creat">Découvrir →</a>
+      </div>
+
+      <!-- Carte Découverte du monde -->
+      <div class="duo-card duo-card-decouverte">
+        <div class="duo-img">
+          <img src="carte-flamme-ap.jpeg" alt="Découverte du monde" loading="lazy" />
+        </div>
+        <a href="ateliers.html#decouverte" class="duo-btn duo-btn-decouverte">Découvrir →</a>
+      </div>
+
+      <!-- Carte Soroban -->
+      <div class="duo-card duo-card-soroban">
+        <div class="duo-img">
+          <img src="carte-dm.jpeg" alt="Découverte du monde" loading="lazy" />
+        </div>
+        <a href="ateliers.html#soroban" class="duo-btn duo-btn-soroban">Découvrir →</a>
+      </div>
+
+    </div>
+
+    <!-- Boutons navigation -->
+    <button class="carrousel-btn carrousel-prev" aria-label="Précédent">‹</button>
+    <button class="carrousel-btn carrousel-next" aria-label="Suivant">›</button>
+
+    <!-- Indicateurs -->
+    <div class="carrousel-dots">
+      <span class="carrousel-dot active"></span>
+      <span class="carrousel-dot"></span>
+      <span class="carrousel-dot"></span>
+      <span class="carrousel-dot"></span>
+      <span class="carrousel-dot"></span>
+    </div>
+
+  </div>
+
+  <div class="hero-deco hero-deco-1"></div>
+  <div class="hero-deco hero-deco-2"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     BANDEAU PROMO
+═══════════════════════════════════════════ -->
+<section class="section-promo">
+  <div class="promo-inner">
+    <span class="promo-star">⭐</span>
+    <div class="promo-texte">
+      <strong>Offre de rentrée</strong>
+      <span>−30 % sur la Grande Section pour toute inscription simultanée d'un frère ou d'une sœur en CP–CM2.</span>
+    </div>
+    <a href="#formulaire" class="promo-btn">J'en profite</a>
+  </div>
+</section>
+
+<div class="section-bandeau bandeau-approche"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     NOTRE APPROCHE
+═══════════════════════════════════════════ -->
+<section id="approche" class="section-approche">
+
+  <!-- Image pleine largeur -->
+  <div class="approche-hero-img reveal">
+    <img src="notre-approche-flamme.jpeg" alt="Notre approche" loading="lazy" />
+  </div>
+
+  <div class="container">
+
+    <div class="section-header reveal">
+      <span class="tag tag-indigo">🎯 Notre approche</span>
+      <h2>Notre Pédagogie : L'Art de l'Efficience</h2>
+      <p>Nous avons conçu Educ'Harmonia pour respecter le rythme naturel de l'enfant tout en garantissant des résultats durables. Notre approche repose sur une pédagogie efficiente : nous optimisons chaque minute d'apprentissage pour maximiser la compréhension et l'ancrage des connaissances, sans jamais saturer l'attention de l'enfant.</p>
+    </div>
+
+    <!-- Intro -->
+    <div class="approche-intro reveal">
+      <div class="approche-deux-cols">
+
+        <div class="approche-col">
+          <h3 class="approche-col-titre">La méthode pour réussir :</h3>
+          <ul class="approche-col-liste">
+            <li><strong>Structurée :</strong> Un parcours clair, étape par étape, pour éviter la dispersion cognitive.</li>
+            <li><strong>Ciblée :</strong> Des outils (Singapour, Soroban) qui vont à l'essentiel pour construire des automatismes puissants.</li>
+            <li><strong>Efficiente :</strong> Des sessions optimisées qui libèrent du temps pour l'exploration et la créativité.</li>
+          </ul>
+        </div>
+
+        <div class="approche-col">
+          <h3 class="approche-col-titre">Le plaisir pour s'épanouir :</h3>
+          <ul class="approche-col-liste">
+            <li><strong>Ludique :</strong> Un environnement stimulant guidé par notre mascotte pour transformer l'apprentissage en aventure.</li>
+            <li><strong>Créatif :</strong> Des ateliers ouverts sur le monde pour cultiver la curiosité et l'ouverture d'esprit.</li>
+            <li><strong>Valorisant :</strong> Une progression positive où chaque succès renforce la confiance en soi.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 4 piliers -->
+    <div class="approche-grid">
+
+      <div class="approche-card reveal">
+        <div class="approche-icon">📚</div>
+        <h3>Pédagogie fondée sur l'efficacité</h3>
+        <p>Nous sélectionnons des approches reconnues pour leurs résultats :</p>
+        <ul>
+          <li><strong>Mathématiques – Méthode Singapour</strong> : compréhension en profondeur, raisonnement, passage du concret à l'abstrait.</li>
+          <li><strong>Français – Méthode explicite</strong> : apprentissage progressif, consignes claires, maîtrise solide des fondamentaux.</li>
+          <li><strong>Soroban</strong> : concentration, rapidité, logique et aisance avec les nombres.</li>
+        </ul>
+        <p class="approche-card-note">Notre objectif : aider l'élève à comprendre durablement, et non apprendre mécaniquement.</p>
+      </div>
+
+      <div class="approche-card reveal">
+        <div class="approche-icon">🧒</div>
+        <h3>Un accompagnement individualisé</h3>
+        <p>Chaque enfant possède son propre rythme, ses forces et ses besoins. C'est pourquoi nous privilégions :</p>
+        <ul>
+          <li>Des explications personnalisées</li>
+          <li>Une progression adaptée au niveau réel de l'élève</li>
+          <li>Un suivi régulier</li>
+          <li>Des objectifs clairs et motivants</li>
+          <li>Une relation bienveillante et encourageante</li>
+        </ul>
+        <p class="approche-card-note">Nous cherchons autant la progression scolaire que la confiance en soi.</p>
+      </div>
+
+      <div class="approche-card reveal">
+        <div class="approche-icon">🖥️</div>
+        <h3>Une école moderne, 100 % en ligne</h3>
+        <p>Grâce au format digital, les familles bénéficient d'une organisation souple et efficace :</p>
+        <ul>
+          <li>Cours depuis la maison</li>
+          <li>Gain de temps sur les déplacements</li>
+          <li>Confort et sérénité pour l'enfant</li>
+          <li>Accès simplifié à un enseignement de qualité</li>
+          <li>Continuité pédagogique partout</li>
+        </ul>
+        <p class="approche-card-note">Notre environnement en ligne est pensé pour être simple, fluide et rassurant.</p>
+      </div>
+
+      <div class="approche-card reveal">
+        <div class="approche-icon">🤝</div>
+        <h3>Une relation de confiance avec les parents</h3>
+        <p>Nous savons qu'un parent cherche avant tout la sérénité. C'est pourquoi nous accordons une grande importance à la communication :</p>
+        <ul>
+          <li>Écoute des besoins de la famille</li>
+          <li>Retours réguliers sur les progrès</li>
+          <li>Transparence sur les objectifs</li>
+          <li>Conseils concrets pour accompagner l'enfant</li>
+        </ul>
+        <p class="approche-card-note">Les parents ne sont jamais laissés de côté : ils sont partenaires de la réussite.</p>
+      </div>
+
+    </div>
+
+    <!-- Ambition finale -->
+    <div class="approche-ambition reveal">
+      <div class="approche-ambition-inner">
+        <div class="approche-ambition-icon">🏆</div>
+        <div>
+          <h3>Notre ambition</h3>
+          <p>Former des élèves solides, autonomes et confiants, grâce à des méthodes intelligentes et un accompagnement humain de qualité.</p>
+          <p class="approche-ambition-signature">Institut Educ'Harmonia : <em>l'exigence pédagogique au service de la réussite de votre enfant.</em></p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-bandeau bandeau-presentation"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     QUI SOMMES-NOUS — FUSIONNÉ
+═══════════════════════════════════════════ -->
+<section id="presentation" class="section-fusion">
+  <div class="container">
+
+    <!-- Cartes problèmes/solutions -->
+    <div class="section-header reveal" style="margin-top:56px;">
+      <span class="tag tag-orange">🌟 Pourquoi nous choisir</span>
+      <h2>Nous avons réponse à vos inquiétudes</h2>
+    </div>
+
+    <div class="pb-grid reveal">
+      <div class="pb-card">
+        <div class="pb-problem"><span class="pb-icon">😔</span><p class="pb-question">« Mon enfant bloque en maths. »</p></div>
+        <div class="pb-arrow">↓</div>
+        <div class="pb-solution"><span class="pb-sol-tag">Notre réponse</span><p>La <strong>méthode Singapour</strong> repart du concret. L'enfant manipule, comprend, puis calcule — plus de blocages.</p></div>
+      </div>
+      <div class="pb-card">
+        <div class="pb-problem"><span class="pb-icon">😰</span><p class="pb-question">« Il lit mais ne comprend pas. »</p></div>
+        <div class="pb-arrow">↓</div>
+        <div class="pb-solution"><span class="pb-sol-tag">Notre réponse</span><p>La <strong>méthode explicite</strong> lie lecture, grammaire et compréhension — rien n'est laissé au hasard.</p></div>
+      </div>
+      <div class="pb-card">
+        <div class="pb-problem"><span class="pb-icon">🤔</span><p class="pb-question">« Je ne sais pas ce qu'il apprend. »</p></div>
+        <div class="pb-arrow">↓</div>
+        <div class="pb-solution"><span class="pb-sol-tag">Notre réponse</span><p><strong>Compte rendu hebdomadaire</strong> : progrès, acquis, points à consolider. Vous êtes toujours dans la boucle.</p></div>
+      </div>
+      <div class="pb-card">
+        <div class="pb-problem"><span class="pb-icon">🧮</span><p class="pb-question">« Il calcule lentement de tête. »</p></div>
+        <div class="pb-arrow">↓</div>
+        <div class="pb-solution"><span class="pb-sol-tag">Notre réponse</span><p>Le <strong>Soroban</strong> entraîne le cerveau à calculer vite et avec précision — visible dès les premières semaines.</p></div>
+      </div>
+      <div class="pb-card">
+        <div class="pb-problem"><span class="pb-icon">🌍</span><p class="pb-question">« Je veux qu'il s'ouvre au monde. »</p></div>
+        <div class="pb-arrow">↓</div>
+        <div class="pb-solution"><span class="pb-sol-tag">Notre réponse</span><p>La <strong>Découverte du monde</strong> éveille curiosité et repères solides — géographie, histoire, sciences, citoyenneté.</p></div>
+      </div>
+      <div class="pb-card">
+        <div class="pb-problem"><span class="pb-icon">🎨</span><p class="pb-question">« Il a besoin de s'exprimer. »</p></div>
+        <div class="pb-arrow">↓</div>
+        <div class="pb-solution"><span class="pb-sol-tag">Notre réponse</span><p>Les <strong>Arts plastiques</strong> sont une vraie matière chez nous — créer, imaginer, gagner confiance en soi.</p></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-bandeau bandeau-singapour"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     MÉTHODE SINGAPOUR
+═══════════════════════════════════════════ -->
+<section id="methodes" class="section-singapour">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-jaune">🔢 Mathématiques</span>
+      <h2>La Méthode Singapour</h2>
+      <p>La méthode qui forme les <strong>meilleurs élèves en mathématiques au monde</strong> — classée n°1 mondial depuis plus de 20 ans, et aujourd'hui au cœur de l'enseignement chez Educ'Harmonia.</p>
+    </div>
+
+    <div class="singapour-wrapper">
+
+      <!-- Image pleine largeur juste sous le titre -->
+      <div class="sing-explication reveal">
+        <img src="explication-MS.jpeg" alt="Les 3 étapes de la méthode Singapour : Concrète, Représentée, Abstraite" loading="lazy" />
+      </div>
+
+      <!-- Texte explicatif -->
+      <div class="sing-texte reveal">
+        <div class="sing-tag">Notre approche en maths</div>
+        <p class="sing-accroche">On part du <strong>concret</strong>, on passe par le <strong>visuel</strong>, on arrive à l'<strong>abstrait</strong>. Les enfants qui « n'aiment pas les maths » découvrent qu'ils en sont tout à fait capables.</p>
+        <div class="sing-stats">
+          <div class="sing-stat-item">
+            <div class="sing-stat-icon">🥇</div>
+            <div class="sing-stat-val">N°1</div>
+            <div class="sing-stat-label">Mondial en maths</div>
+          </div>
+          <div class="sing-stat-sep"></div>
+          <div class="sing-stat-item">
+            <div class="sing-stat-icon">🧠</div>
+            <div class="sing-stat-val">3 étapes</div>
+            <div class="sing-stat-label">Concret → Visuel → Abstrait</div>
+          </div>
+          <div class="sing-stat-sep"></div>
+          <div class="sing-stat-item">
+            <div class="sing-stat-icon">🎯</div>
+            <div class="sing-stat-val">0 notion</div>
+            <div class="sing-stat-label">Survolée ou oubliée</div>
+          </div>
+          <div class="sing-stat-sep"></div>
+          <div class="sing-stat-item">
+            <div class="sing-stat-icon">🤝</div>
+            <div class="sing-stat-val">Tous</div>
+            <div class="sing-stat-label">Les profils d'apprenants</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-bandeau bandeau-explicite"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     ENSEIGNEMENT EXPLICITE
+═══════════════════════════════════════════ -->
+<section id="explicite" class="section-explicite">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-bleu">📖 Français</span>
+      <h2>Méthode français explicite</h2>
+      <p>4 étapes claires, progressives et bienveillantes — pour que chaque enfant <strong>comprenne vraiment</strong> avant d'avancer.</p>
+    </div>
+
+    <!-- Image pleine largeur -->
+    <div class="exp-img reveal">
+      <img src="explication-ME2.jpeg" alt="Les 4 étapes de la méthode explicite : Je fais, Nous faisons, Tu fais, Objectivation" loading="lazy" />
+    </div>
+
+    <!-- Texte synthèse -->
+    <div class="exp-synthese reveal">
+      <div class="exp-syn-tag">Notre approche en français</div>
+      <p class="exp-syn-accroche">Rien n'est laissé au hasard. Le professeur <strong>montre</strong>, on <strong>pratique ensemble</strong>, l'élève <strong>essaie seul</strong>, puis on <strong>ancre en mémoire</strong>. Une progression naturelle qui donne confiance.</p>
+      <div class="exp-syn-badges">
+        <span>💡 Rien à deviner — tout est explicité</span>
+        <span>🤝 Erreurs corrigées en direct</span>
+        <span>🧠 Notion ancrée en mémoire</span>
+        <span>📈 Du simple vers le complexe</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-bandeau bandeau-classes"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     CLASSES
+═══════════════════════════════════════════ -->
+<section id="classes" class="section-classes">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-rose">🎒 Niveaux scolaires</span>
+      <h2>Le parcours complet de l'école primaire</h2>
+      <p>De la Grande Section de maternelle au CM2 — six années accompagnées avec la même rigueur et la même bienveillance.</p>
+    </div>
+
+    <div class="classes-images-wrapper">
+
+      <!-- Rangée 1 : GS / CP / CE1 -->
+      <div class="classes-img-row reveal">
+        <div class="classes-img-block">
+          <img src="carte-primaire.jpeg" alt="Grande Section, CP, CE1" loading="lazy" />
+          <!-- Zone cliquable GS -->
+          <a href="gs.html" class="classes-img-link" style="left:2%; width:31%;">
+            <span class="carte-btn carte-btn-gs">Découvrir →</span>
+          </a>
+          <!-- Zone cliquable CP -->
+          <a href="cp.html" class="classes-img-link" style="left:35%; width:31%;">
+            <span class="carte-btn carte-btn-cp">Découvrir →</span>
+          </a>
+          <!-- Zone cliquable CE1 -->
+          <a href="ce1.html" class="classes-img-link" style="left:68%; width:31%;">
+            <span class="carte-btn carte-btn-ce1">Découvrir →</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Rangée 2 : CE2 / CM1 / CM2 -->
+      <div class="classes-img-row reveal">
+        <div class="classes-img-block">
+          <img src="carte-primaire-1.jpeg" alt="CE2, CM1, CM2" loading="lazy" />
+          <!-- Zone cliquable CE2 -->
+          <a href="ce2.html" class="classes-img-link" style="left:2%; width:31%;">
+            <span class="carte-btn carte-btn-ce2">Découvrir →</span>
+          </a>
+          <!-- Zone cliquable CM1 -->
+          <a href="cm1.html" class="classes-img-link" style="left:35%; width:31%;">
+            <span class="carte-btn carte-btn-cm1">Découvrir →</span>
+          </a>
+          <!-- Zone cliquable CM2 -->
+          <a href="cm2.html" class="classes-img-link" style="left:68%; width:31%;">
+            <span class="carte-btn carte-btn-cm2">Découvrir →</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-bandeau bandeau-journee"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     JOURNÉE TYPE
+═══════════════════════════════════════════ -->
+<section class="section-journee">
+
+  <!-- Décor ordinateur en arrière-plan -->
+  <div class="ordi-deco" aria-hidden="true">
+
+    <!-- Écran -->
+    <div class="ordi-ecran">
+      <div class="ordi-topbar">
+        <span class="ordi-dot d-rouge"></span>
+        <span class="ordi-dot d-jaune"></span>
+        <span class="ordi-dot d-vert"></span>
+        <span class="ordi-barre-titre"></span>
+      </div>
+      <div class="ordi-screen-body">
+        <div class="ordi-line l1"></div>
+        <div class="ordi-line l2"></div>
+        <div class="ordi-line l3"></div>
+        <div class="ordi-block"></div>
+        <div class="ordi-line l4"></div>
+        <div class="ordi-line l2"></div>
+        <div class="ordi-reflet"></div>
+      </div>
+    </div>
+
+    <!-- Pied écran -->
+    <div class="ordi-pied">
+      <div class="ordi-col"></div>
+    </div>
+    <div class="ordi-base"></div>
+
+    <!-- Clavier -->
+    <div class="ordi-clavier">
+      <div class="ordi-rangee">
+        <span class="k k-large"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k k-large"></span>
+      </div>
+      <div class="ordi-rangee">
+        <span class="k k-tab"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k k-enter"></span>
+      </div>
+      <div class="ordi-rangee">
+        <span class="k k-caps"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k"></span><span class="k k-caps"></span>
+      </div>
+      <div class="ordi-rangee">
+        <span class="k k-space"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-violet">📅 En pratique</span>
+      <h2 class="journee-titre">Une séance, concrètement</h2>
+      <p class="journee-sous-titre">Voici comment se déroule un cours Zoom type chez Educ'Harmonia.</p>
+    </div>
+
+    <div class="frise-wrapper">
+
+      <!-- Ligne ondulée SVG en fond -->
+      <svg class="frise-courbe" viewBox="0 0 1000 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 0,80 C 80,80 120,20 200,20 C 280,20 320,140 400,140 C 480,140 520,20 600,20 C 680,20 720,140 800,140 C 880,140 920,80 1000,80"
+          fill="none" stroke="url(#friseGrad)" stroke-width="3" stroke-dasharray="8 6" stroke-linecap="round"/>
+        <defs>
+          <linearGradient id="friseGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%"   stop-color="#fbbf24"/>
+            <stop offset="20%"  stop-color="#f97316"/>
+            <stop offset="40%"  stop-color="#4ade80"/>
+            <stop offset="60%"  stop-color="#7dd3fc"/>
+            <stop offset="80%"  stop-color="#c084fc"/>
+            <stop offset="100%" stop-color="#fb7185"/>
+          </linearGradient>
+        </defs>
+      </svg>
+
+      <div class="frise-etapes">
+
+        <!-- Étape 1 — haut -->
+        <div class="frise-etape frise-haut reveal">
+          <div class="frise-card" style="--fc:#f59e0b; --fc-bg:#fef9c3;">
+            <div class="frise-temps">0 min</div>
+            <div class="frise-icon">🔔</div>
+            <h4>Accueil</h4>
+            <p>Le prof accueille chaque enfant par son prénom. Entrée calme et structurée.</p>
+          </div>
+          <div class="frise-dot" style="background:#f59e0b;"></div>
+        </div>
+
+        <!-- Étape 2 — bas -->
+        <div class="frise-etape frise-bas reveal">
+          <div class="frise-dot" style="background:#ea580c;"></div>
+          <div class="frise-card" style="--fc:#ea580c; --fc-bg:#ffedd5;">
+            <div class="frise-temps">5 min</div>
+            <div class="frise-icon">🔁</div>
+            <h4>Révision rapide</h4>
+            <p>On revoit ce qui a été appris. La mémoire se construit par répétition espacée.</p>
+          </div>
+        </div>
+
+        <!-- Étape 3 — haut -->
+        <div class="frise-etape frise-haut reveal">
+          <div class="frise-card" style="--fc:#16a34a; --fc-bg:#dcfce7;">
+            <div class="frise-temps">15 min</div>
+            <div class="frise-icon">📚</div>
+            <h4>Nouvelle notion</h4>
+            <p>Le prof explique à voix haute. Les enfants observent, écoutent, questionnent.</p>
+          </div>
+          <div class="frise-dot" style="background:#16a34a;"></div>
+        </div>
+
+        <!-- Étape 4 — bas -->
+        <div class="frise-etape frise-bas reveal">
+          <div class="frise-dot" style="background:#0284c7;"></div>
+          <div class="frise-card" style="--fc:#0284c7; --fc-bg:#e0f2fe;">
+            <div class="frise-temps">30 min</div>
+            <div class="frise-icon">✏️</div>
+            <h4>Pratique guidée</h4>
+            <p>On s'entraîne ensemble. Le prof accompagne et corrige en direct.</p>
+          </div>
+        </div>
+
+        <!-- Étape 5 — haut -->
+        <div class="frise-etape frise-haut reveal">
+          <div class="frise-card" style="--fc:#9333ea; --fc-bg:#ede9fe;">
+            <div class="frise-temps">45 min</div>
+            <div class="frise-icon">🎯</div>
+            <h4>Exercice autonome</h4>
+            <p>L'enfant applique seul. Le prof observe et note les points à revoir.</p>
+          </div>
+          <div class="frise-dot" style="background:#9333ea;"></div>
+        </div>
+
+        <!-- Étape 6 — bas -->
+        <div class="frise-etape frise-bas reveal">
+          <div class="frise-dot" style="background:#e11d48;"></div>
+          <div class="frise-card" style="--fc:#e11d48; --fc-bg:#ffe4e6;">
+            <div class="frise-temps">55 min</div>
+            <div class="frise-icon">⭐</div>
+            <h4>Bilan & félicitations</h4>
+            <p>Résumé de la séance et encouragements personnalisés pour chaque élève.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="section-bandeau bandeau-fonct"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     FONCTIONNEMENT
+═══════════════════════════════════════════ -->
+<section id="fonctionnement" class="section-fonct">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-jaune">🚀 Comment ça marche</span>
+      <h2>Démarrer est simple</h2>
+      <p>Trois étapes et votre enfant est en classe.</p>
+    </div>
+
+    <div class="fonct-grid">
+      <div class="fonct-card reveal">
+        <div class="fonct-num">01</div>
+        <div class="fonct-icon">📋</div>
+        <h3>Inscription</h3>
+        <p>Contactez-nous sur WhatsApp. On discute ensemble de la situation de votre enfant et on choisit la classe adaptée. L'accueil est personnalisé dès le premier échange.</p>
+        <div class="fonct-detail">⏱ Moins de 24h pour démarrer</div>
+      </div>
+      <div class="fonct-card reveal">
+        <div class="fonct-num">02</div>
+        <div class="fonct-icon">💻</div>
+        <h3>Cours en direct</h3>
+        <p>Des sessions Zoom avec des professeurs qualifiés et bienveillants. Les horaires s'adaptent à votre organisation familiale. Petit groupe ou cours individuel selon les besoins.</p>
+        <div class="fonct-detail">📹 Sessions enregistrées disponibles</div>
+      </div>
+      <div class="fonct-card reveal">
+        <div class="fonct-num">03</div>
+        <div class="fonct-icon">📈</div>
+        <h3>Suivi et progrès</h3>
+        <p>Devoirs corrigés, compte rendu hebdomadaire, messagerie directe avec les enseignants. Vous voyez les progrès de votre enfant, semaine après semaine.</p>
+        <div class="fonct-detail">📊 Bilan mensuel pour chaque élève</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<div class="section-bandeau bandeau-faq"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     FAQ
+═══════════════════════════════════════════ -->
+<section id="faq" class="section-faq">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-orange">❓ Vos questions</span>
+      <h2>Les questions que tout le monde pose</h2>
+      <p>Vous avez d'autres questions ? Contactez-nous sur WhatsApp, on répond rapidement.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          <span>Mon enfant a besoin d'un ordinateur performant ?</span>
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-reponse">
+          <p>Non. Une tablette, un ordinateur basique ou même un smartphone suffisent pour accéder aux cours Zoom. Une connexion internet stable est le seul prérequis technique.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          <span>Les cours sont-ils en direct ou en différé ?</span>
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-reponse">
+          <p>Les cours sont en direct sur Zoom — c'est ce qui fait la qualité de l'enseignement. Le professeur interagit avec l'élève en temps réel. Les sessions sont enregistrées et accessibles si l'enfant veut revoir une notion.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          <span>Est-ce que ça remplace vraiment l'école ?</span>
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-reponse">
+          <p>Educ'Harmonia convient à plusieurs situations : instruction en famille (IEF), enfants expatriés, soutien scolaire intensif, ou enfants en difficulté scolaire. Pour l'IEF, nous accompagnons les familles dans toutes les démarches administratives.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          <span>Combien de cours par semaine ?</span>
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-reponse">
+          <p>Le rythme est adapté à la situation de chaque enfant. En moyenne, nous proposons 5 séances de 2h00 par semaine pour un accompagnement complet, avec une adaptation possible selon les circonstances.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-question">
+          <span>Comment se passe la première séance ?</span>
+          <span class="faq-chevron">+</span>
+        </button>
+        <div class="faq-reponse">
+          <p>La première séance est un bilan gratuit. Le professeur prend le temps de découvrir votre enfant : ses points forts, ses difficultés, sa personnalité. C'est aussi le moment pour vous de poser toutes vos questions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     TARIFS
+═══════════════════════════════════════════ -->
+<section id="tarifs" class="section-tarifs">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-bleu">💳 Tarifs</span>
+      <h2>Choisissez votre formule</h2>
+      <p>Des tarifs identiques pour toutes les classes, transparents et sans frais cachés. Premier bilan gratuit et sans engagement.</p>
+    </div>
+
+    <!-- Sélecteur de classe -->
+    <div class="tarif-classes reveal">
+      <button class="tarif-classe-btn active" data-classe="Maternelle">Maternelle</button>
+      <button class="tarif-classe-btn" data-classe="CP">CP</button>
+      <button class="tarif-classe-btn" data-classe="CE1">CE1</button>
+      <button class="tarif-classe-btn" data-classe="CE2">CE2</button>
+      <button class="tarif-classe-btn" data-classe="CM1">CM1</button>
+      <button class="tarif-classe-btn" data-classe="CM2">CM2</button>
+    </div>
+
+    <div class="tarif-classe-label reveal">Tarifs — <span id="tarif-classe-active">Maternelle (MS & GS)</span></div>
+
+    <div class="tarifs-grid">
+
+      <!-- MENSUEL -->
+      <div class="tarif-card tarif-populaire reveal">
+        <div class="tarif-badge">Populaire</div>
+        <div class="tarif-titre">Mensuel</div>
+        <div class="tarif-prix">
+          <span class="tarif-montant" id="tarif-mensuel-montant">90</span>
+          <span class="tarif-devise">€ <small>HT</small></span>
+        </div>
+        <div class="tarif-detail" id="tarif-mensuel-detail">Soit 600 € sur 10 mois</div>
+        <hr class="tarif-sep" />
+        <ul class="tarif-liste">
+          <li>✓ Acompte de 100 €</li>
+          <li>✓ 39 € de frais de dossier</li>
+        </ul>
+        <a href="#formulaire" class="tarif-btn tarif-btn-primary">Je choisis</a>
+      </div>
+
+      <!-- TRIMESTRIEL -->
+      <div class="tarif-card reveal">
+        <div class="tarif-titre">Trimestriel</div>
+        <div class="tarif-prix">
+          <span class="tarif-montant" id="tarif-trimestriel-montant">280</span>
+          <span class="tarif-devise">€ <small>HT</small></span>
+        </div>
+        <div class="tarif-detail" id="tarif-trimestriel-detail">Soit 840 € sur 3 trimestres</div>
+        <div class="tarif-economie" id="tarif-trimestriel-economie">60 € d'économie</div>
+        <hr class="tarif-sep" />
+        <ul class="tarif-liste">
+          <li>✓ Acompte de 100 €</li>
+          <li>✓ 39 € de frais de dossier</li>
+        </ul>
+        <a href="#formulaire" class="tarif-btn tarif-btn-secondary">Je choisis</a>
+      </div>
+
+      <!-- ANNUEL -->
+      <div class="tarif-card reveal">
+        <div class="tarif-titre">Annuel</div>
+        <div class="tarif-prix">
+          <span class="tarif-montant" id="tarif-annuel-montant">800</span>
+          <span class="tarif-devise">€ <small>HT</small></span>
+        </div>
+        <div class="tarif-detail" id="tarif-annuel-detail">Soit 800 € en 1 fois</div>
+        <div class="tarif-economie" id="tarif-annuel-economie">100 € d'économie</div>
+        <hr class="tarif-sep" />
+        <ul class="tarif-liste">
+          <li>✓ Acompte de 100 €</li>
+          <li>✓ 39 € de frais de dossier</li>
+        </ul>
+        <a href="#formulaire" class="tarif-btn tarif-btn-secondary">Je choisis</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FORMULAIRE INSCRIPTION
+═══════════════════════════════════════════ -->
+<section id="formulaire" class="section-formulaire">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="tag tag-vert">📋 Inscription</span>
+      <h2>Inscrire mon enfant</h2>
+      <p>Remplissez ce formulaire et nous vous recontactons sous 24h pour organiser un premier bilan gratuit.</p>
+    </div>
+
+    <form class="formulaire-inscription reveal" action="#" method="POST">
+
+      <div class="form-groupe-titre">👦 Informations sur l'enfant</div>
+      <div class="form-row">
+        <div class="form-groupe">
+          <label for="enfant-prenom">Prénom de l'enfant *</label>
+          <input type="text" id="enfant-prenom" name="enfant_prenom" placeholder="Ex : Lucas" required />
+        </div>
+        <div class="form-groupe">
+          <label for="enfant-nom">Nom de l'enfant *</label>
+          <input type="text" id="enfant-nom" name="enfant_nom" placeholder="Ex : Martin" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-groupe">
+          <label for="enfant-naissance">Date de naissance *</label>
+          <input type="date" id="enfant-naissance" name="enfant_naissance" required />
+        </div>
+        <div class="form-groupe">
+          <label for="enfant-classe">Classe actuelle *</label>
+          <select id="enfant-classe" name="enfant_classe" required>
+            <option value="" disabled selected>Choisir une classe</option>
+            <option value="GS">Grande Section (GS)</option>
+            <option value="CP">CP</option>
+            <option value="CE1">CE1</option>
+            <option value="CE2">CE2</option>
+            <option value="CM1">CM1</option>
+            <option value="CM2">CM2</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-groupe-titre">👨‍👩‍👦 Informations sur le parent</div>
+      <div class="form-row">
+        <div class="form-groupe">
+          <label for="parent-prenom">Prénom du parent *</label>
+          <input type="text" id="parent-prenom" name="parent_prenom" placeholder="Ex : Marie" required />
+        </div>
+        <div class="form-groupe">
+          <label for="parent-nom">Nom du parent *</label>
+          <input type="text" id="parent-nom" name="parent_nom" placeholder="Ex : Martin" required />
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-groupe">
+          <label for="parent-email">Email *</label>
+          <input type="email" id="parent-email" name="parent_email" placeholder="Ex : marie@email.com" required />
+        </div>
+        <div class="form-groupe">
+          <label for="parent-tel">Téléphone *</label>
+          <input type="tel" id="parent-tel" name="parent_tel" placeholder="Ex : 06 12 34 56 78" required />
+        </div>
+      </div>
+
+      <div class="form-groupe">
+        <label for="message">Message ou question (optionnel)</label>
+        <textarea id="message" name="message" rows="4" placeholder="Décrivez en quelques mots la situation de votre enfant, vos attentes..."></textarea>
+      </div>
+
+      <div class="form-reassurance">
+        <span>✓ Réponse sous 24h</span>
+        <span>✓ Premier bilan gratuit</span>
+        <span>✓ Sans engagement</span>
+      </div>
+
+      <button type="submit" class="form-submit">Envoyer ma demande d'inscription →</button>
+
+    </form>
+  </div>
+</section>
+
+<div class="section-bandeau bandeau-cta"><svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z"/></svg></div>
+<!-- ═══════════════════════════════════════════
+     CTA FINAL
+═══════════════════════════════════════════ -->
+<section id="inscription" class="section-cta">
+  <div class="cta-inner reveal">
+    <div class="cta-badge">🎁 Première séance offerte</div>
+    <h2>Prêt à offrir à votre enfant<br>une école qui l'aide vraiment ?</h2>
+    <p>L'inscription prend 5 minutes. La première séance est un bilan gratuit — sans engagement.</p>
+    <a href="https://wa.me/33652182898" class="btn-cta" target="_blank" rel="noopener noreferrer">💬 Nous contacter sur WhatsApp</a>
+    <div class="cta-reassurance">
+      <span>✓ Réponse sous 24h</span>
+      <span>✓ Premier bilan gratuit</span>
+      <span>✓ Sans engagement</span>
+    </div>
+  </div>
+  <div class="cta-deco-1"></div>
+  <div class="cta-deco-2"></div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════ -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Educ'Harmonia" class="footer-logo" />
+        <span>Educ'Harmonia</span>
+      </div>
+      <p>École primaire 100% en ligne, de la Grande Section au CM2. L'épanouissement de chaque enfant, grâce à des méthodes qui ont fait leurs preuves.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#approche">Notre approche</a></li>
+        <li><a href="#methodes">Nos méthodes</a></li>
+        <li><a href="#classes">Les classes</a></li>
+        <li><a href="#fonctionnement">Fonctionnement</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#inscription">S'inscrire</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:contact@educ-harmonia.fr">📧 contact@educ-harmonia.fr</a></li>
+        <li><a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">📱 06 52 18 28 98</a></li>
+        <li>🌐 www.educ-harmonia.fr</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Educ'Harmonia — Tous droits réservés</p>
+    <p>Mentions légales · Politique de confidentialité</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CE2 — Cours Élémentaire 2e année en ligne — Educ'Harmonia</title>
+  <meta name="description" content="Le CE2 chez Educ'Harmonia : l'âge de la maîtrise et de l'autonomie. Méthode Singapour, pédagogie explicite, Soroban et exploration du monde. École primaire 100% en ligne." />
+  <meta property="og:title" content="CE2 — Cours Élémentaire 2e année en ligne — Educ'Harmonia" />
+  <meta property="og:description" content="Le CE2 chez Educ'Harmonia : méthode Singapour, pédagogie explicite, Soroban. Maîtrise et autonomie, cours Zoom en direct." />
+  <meta property="og:image" content="logo-banniere.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CE2 — Cours Élémentaire 2e année en ligne — Educ'Harmonia" />
+  <meta name="twitter:description" content="Le CE2 chez Educ'Harmonia : méthode Singapour, pédagogie explicite, Soroban. Cours Zoom en direct." />
+  <meta name="twitter:image" content="logo-banniere.jpeg" />
+  <link rel="canonical" href="https://www.educ-harmonia.fr/ce2.html" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── COULEURS CE2 : vert ── */
+    :root {
+      --ce2-main:  #22c55e;
+      --ce2-light: #f0fdf4;
+      --ce2-mid:   #bbf7d0;
+      --ce2-dark:  #16a34a;
+    }
+
+    .ce2-hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 4px solid var(--ce2-main);
+      padding: 140px 24px 100px;
+      text-align: center;
+      min-height: 100vh;
+    }
+    .ce2-hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      z-index: 0;
+    }
+    .ce2-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.45) 100%);
+      z-index: 1;
+    }
+    .ce2-hero > *:not(.ce2-hero-img):not(.ce2-hero-overlay) {
+      position: relative;
+      z-index: 2;
+    }
+    .ce2-badge {
+      display: inline-block;
+      background: var(--ce2-main);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .ce2-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .ce2-hero h1 em {
+      font-style: normal;
+      font-family: 'Lora', serif;
+      color: #bbf7d0;
+      background: none;
+      -webkit-text-fill-color: #bbf7d0;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .ce2-hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.92);
+      max-width: 660px;
+      margin: 0 auto 32px;
+      line-height: 1.75;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    }
+    .ce2-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--ce2-main);
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 10px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(34,197,94,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+    .ce2-back:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(34,197,94,0.3); }
+
+    /* ── CONTENU ── */
+    .ce2-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .ce2-bloc {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 40px 44px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border-top: 5px solid var(--ce2-main);
+    }
+    .ce2-bloc-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--ce2-main);
+      margin-bottom: 20px;
+    }
+
+    .ce2-methode-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .ce2-methode-item {
+      background: var(--ce2-light);
+      border-radius: 16px;
+      padding: 24px 28px;
+      border-left: 5px solid var(--ce2-main);
+    }
+    .ce2-methode-item h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 8px;
+    }
+    .ce2-methode-item p {
+      color: #57534e;
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+
+    /* Soroban */
+    .ce2-soroban {
+      background: linear-gradient(135deg, #f0fdf4, #dcfce7);
+      border-radius: 20px;
+      padding: 32px 36px;
+      border: 2px solid var(--ce2-mid);
+    }
+    .ce2-soroban-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .ce2-soroban-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .ce2-soroban-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: var(--ce2-main);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      margin-top: 2px;
+    }
+    .ce2-soroban-text h4 {
+      font-size: 0.95rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 4px;
+    }
+    .ce2-soroban-text p {
+      color: #57534e;
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    /* Éveil grid */
+    .ce2-eveil-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .ce2-eveil-card {
+      background: var(--ce2-light);
+      border-radius: 16px;
+      padding: 24px;
+      border-left: 5px solid #4ade80;
+    }
+    .ce2-eveil-card h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 8px;
+    }
+    .ce2-eveil-card p {
+      color: #57534e;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* CTA final */
+    .ce2-cta {
+      background: linear-gradient(135deg, var(--ce2-main), #4ade80);
+      border-radius: 24px;
+      padding: 48px;
+      color: white;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .ce2-cta h2 {
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    .ce2-cta p {
+      color: rgba(255,255,255,0.92);
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin: 0 auto 16px;
+      line-height: 1.75;
+    }
+    .ce2-engagement {
+      background: rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 20px 28px;
+      margin: 20px auto;
+      max-width: 580px;
+      font-size: 0.97rem;
+      color: white;
+      line-height: 1.8;
+      text-align: left;
+    }
+    .ce2-conclusion {
+      font-style: italic;
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.95);
+      margin: 16px 0 28px;
+    }
+    .ce2-cta a {
+      display: inline-block;
+      background: white;
+      color: var(--ce2-dark);
+      font-weight: 900;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+    .ce2-cta a:hover { transform: translateY(-2px); }
+
+    @media (max-width: 640px) {
+      .ce2-eveil-grid { grid-template-columns: 1fr; }
+      .ce2-bloc { padding: 28px 20px; }
+      .ce2-soroban { padding: 24px 20px; }
+      .ce2-cta { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-banniere.jpeg" alt="Educ'Harmonia" class="logo-img" />
+      <span class="nav-brand-wrap">
+        <span class="nav-brand">Institut Educ'Harmonia</span>
+        <span class="nav-tagline">— 100% en ligne —</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#approche">Notre approche</a></li>
+      <li><a href="index.html#methodes">Nos méthodes</a></li>
+      <li><a href="index.html#classes">Les classes</a></li>
+      <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/33652182898" class="btn-nav" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#approche" class="mobile-link">Notre approche</a></li>
+      <li><a href="index.html#methodes" class="mobile-link">Nos méthodes</a></li>
+      <li><a href="index.html#classes" class="mobile-link">Les classes</a></li>
+      <li><a href="index.html#fonctionnement" class="mobile-link">Fonctionnement</a></li>
+      <li><a href="index.html#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="https://wa.me/33652182898" class="btn-nav mobile-cta" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="ce2-hero">
+  <img src="hero-ce2.jpeg" alt="Classe CE2 — Educ'Harmonia" class="ce2-hero-img" loading="eager" />
+  <div class="ce2-hero-overlay"></div>
+  <div class="ce2-badge">📗 CE2 — Cours Élémentaire 2e année</div>
+  <h1>Le CE2 chez Educ'Harmonia :<br><em>L'Âge de la Maîtrise et de l'Autonomie.</em></h1>
+  <p>Le CE2 est l'année où tout « s'imbrique ». Votre enfant gagne en assurance et commence à utiliser ses connaissances comme de véritables outils pour explorer le monde.</p>
+  <a href="index.html#classes" class="ce2-back">← Retour aux classes</a>
+</section>
+
+<!-- CONTENU -->
+<div class="ce2-content">
+
+  <!-- Fondamentaux -->
+  <div class="ce2-bloc reveal">
+    <div class="ce2-bloc-tag">📚 Consolidation et Approfondissement</div>
+    <div class="ce2-methode-list">
+      <div class="ce2-methode-item">
+        <h3>📖 Français — Méthode Explicite</h3>
+        <p>Nous passons de l'apprentissage de la lecture à la littérature. L'enseignement explicite permet de décortiquer les textes pour en comprendre toutes les nuances. En orthographe et grammaire, les règles deviennent des automatismes grâce à une pratique quotidienne structurée.</p>
+      </div>
+      <div class="ce2-methode-item">
+        <h3>🔢 Mathématiques — Méthode de Singapour</h3>
+        <p>On consolide la numération jusqu'à 10 000 et l'on perfectionne les techniques opératoires (multiplication à plusieurs chiffres, division). L'approche reste visuelle et concrète pour que l'enfant ne se sente jamais perdu face à l'augmentation des nombres.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Soroban -->
+  <div class="ce2-bloc reveal">
+    <div class="ce2-bloc-tag">🧮 L'Expertise Soroban : Vers l'Agilité Mentale</div>
+    <p style="color:#57534e; margin-bottom:24px; line-height:1.75;">Le boulier japonais devient un compagnon de route indispensable au CE2 :</p>
+    <div class="ce2-soroban">
+      <div class="ce2-soroban-list">
+        <div class="ce2-soroban-item">
+          <div class="ce2-soroban-icon">🧠</div>
+          <div class="ce2-soroban-text">
+            <h4>Calcul mental complexe</h4>
+            <p>L'enfant apprend à jongler avec des nombres plus importants, développant une mémoire visuelle et une concentration exceptionnelles.</p>
+          </div>
+        </div>
+        <div class="ce2-soroban-item">
+          <div class="ce2-soroban-icon">😊</div>
+          <div class="ce2-soroban-text">
+            <h4>Plaisir des chiffres</h4>
+            <p>Le côté tactile du Soroban désamorce toute peur des mathématiques et transforme le calcul en véritable plaisir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Éveil -->
+  <div class="ce2-bloc reveal">
+    <div class="ce2-bloc-tag">🎨 Exploration du Monde et Créativité</div>
+    <p style="color:#57534e; margin-bottom:24px; line-height:1.75;">Le programme s'élargit considérablement au CE2, ouvrant l'enfant à l'histoire, la géographie et la démarche scientifique :</p>
+    <div class="ce2-eveil-grid">
+      <div class="ce2-eveil-card">
+        <h3>🌍 Découverte du Monde</h3>
+        <p>Le programme s'élargit à l'Histoire (les grandes périodes) et à la Géographie (habiter le monde). En sciences, nous privilégions la démarche d'investigation : on teste, on observe, on conclut.</p>
+      </div>
+      <div class="ce2-eveil-card">
+        <h3>🎨 Arts Plastiques</h3>
+        <p>L'enfant apprend à utiliser l'art pour illustrer ses découvertes historiques ou scientifiques. C'est l'année de la gestion de projets créatifs plus longs, renforçant la patience et la persévérance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="ce2-cta reveal">
+    <h2>🛡️ Pourquoi est-ce rassurant pour vous ?</h2>
+    <p>Au CE2, nous veillons particulièrement à ce qu'aucune lacune ne s'installe avant le passage au cycle suivant.</p>
+    <div class="ce2-engagement">
+      ✓ &nbsp;<strong>Accompagnement personnalisé</strong> : chaque enfant progresse à son rythme dans un cadre bienveillant.<br /><br />
+      ✓ &nbsp;<strong>Équilibre parfait</strong> : la technologie interactive pour la motivation, le bois et le matériel physique pour l'ancrage réel des connaissances.
+    </div>
+    <p class="ce2-conclusion">Faire du CE2 une année de transition fluide où l'enfant, fier de ses savoirs, devient un élève autonome et curieux de tout.</p>
+    <a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">💬 Inscrire mon enfant en CE2</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Educ'Harmonia" class="footer-logo" />
+        <span>Educ'Harmonia</span>
+      </div>
+      <p>École primaire 100% en ligne, de la Grande Section au CM2.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html#approche">Notre approche</a></li>
+        <li><a href="index.html#methodes">Nos méthodes</a></li>
+        <li><a href="index.html#classes">Les classes</a></li>
+        <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:contact@educ-harmonia.fr">📧 contact@educ-harmonia.fr</a></li>
+        <li><a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">📱 06 52 18 28 98</a></li>
+        <li>🌐 www.educ-harmonia.fr</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Educ'Harmonia — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,377 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grande Section (GS) — École primaire en ligne — Educ'Harmonia</title>
+  <meta name="description" content="La Grande Section chez Educ'Harmonia : le tremplin vers la réussite scolaire. Méthode Singapour, pédagogie explicite, arts plastiques et découverte du monde. Cours en direct sur Zoom." />
+  <meta property="og:title" content="Grande Section (GS) — École primaire en ligne — Educ'Harmonia" />
+  <meta property="og:description" content="La Grande Section chez Educ'Harmonia : méthode Singapour, pédagogie explicite, arts plastiques. Cours Zoom en direct, profs qualifiés." />
+  <meta property="og:image" content="logo-banniere.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Grande Section (GS) — École primaire en ligne — Educ'Harmonia" />
+  <meta name="twitter:description" content="La Grande Section chez Educ'Harmonia : méthode Singapour, pédagogie explicite, arts plastiques. Cours Zoom en direct." />
+  <meta name="twitter:image" content="logo-banniere.jpeg" />
+  <link rel="canonical" href="https://www.educ-harmonia.fr/gs.html" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gs-hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 4px solid #f43f5e;
+      padding: 140px 24px 100px;
+      text-align: center;
+      min-height: 100vh;
+    }
+    .gs-hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      z-index: 0;
+    }
+    .gs-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.45) 100%);
+      z-index: 1;
+    }
+    .gs-hero > *:not(.gs-hero-img):not(.gs-hero-overlay) {
+      position: relative;
+      z-index: 2;
+    }
+    .gs-badge {
+      display: inline-block;
+      background: #f43f5e;
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .gs-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .gs-hero h1 em {
+      font-style: normal;
+      font-family: 'Lora', serif;
+      color: #fecdd3;
+      background: none;
+      -webkit-text-fill-color: #fecdd3;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .gs-hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.92);
+      max-width: 640px;
+      margin: 0 auto 32px;
+      line-height: 1.75;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    }
+    .gs-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: #f43f5e;
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 10px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(244,63,94,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+    .gs-back:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(244,63,94,0.3); }
+
+    .gs-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    /* Blocs de section */
+    .gs-bloc {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 40px 44px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border-top: 5px solid #f43f5e;
+    }
+    .gs-bloc-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: #f43f5e;
+      margin-bottom: 20px;
+    }
+    .gs-bloc h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 24px;
+      line-height: 1.3;
+    }
+
+    /* Items méthodes */
+    .gs-methode-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .gs-methode-item {
+      background: #fff1f2;
+      border-radius: 16px;
+      padding: 24px 28px;
+      border-left: 5px solid #f43f5e;
+    }
+    .gs-methode-item h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 8px;
+    }
+    .gs-methode-item p {
+      color: #57534e;
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+
+    /* Éveil */
+    .gs-eveil-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .gs-eveil-card {
+      background: #fff1f2;
+      border-radius: 16px;
+      padding: 24px;
+      border-left: 5px solid #fb7185;
+    }
+    .gs-eveil-card h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 8px;
+    }
+    .gs-eveil-card p {
+      color: #57534e;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* Engagement */
+    .gs-engagement {
+      background: linear-gradient(135deg, #f43f5e, #fb7185);
+      border-radius: 24px;
+      padding: 48px;
+      color: white;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .gs-engagement h2 {
+      color: white;
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+    }
+    .gs-engagement p {
+      color: rgba(255,255,255,0.92);
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin: 0 auto 16px;
+      line-height: 1.75;
+    }
+    .gs-engagement .gs-resultat {
+      background: rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 20px 28px;
+      margin: 20px auto;
+      max-width: 560px;
+      font-weight: 700;
+      font-size: 1rem;
+      color: white;
+      line-height: 1.7;
+    }
+    .gs-engagement .gs-conclusion {
+      font-style: italic;
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.95);
+      margin: 16px 0 28px;
+    }
+    .gs-engagement a {
+      display: inline-block;
+      background: white;
+      color: #f43f5e;
+      font-weight: 900;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+    .gs-engagement a:hover { transform: translateY(-2px); }
+
+    @media (max-width: 640px) {
+      .gs-eveil-grid { grid-template-columns: 1fr; }
+      .gs-bloc { padding: 28px 20px; }
+      .gs-engagement { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-banniere.jpeg" alt="Educ'Harmonia" class="logo-img" />
+      <span class="nav-brand-wrap">
+        <span class="nav-brand">Institut Educ'Harmonia</span>
+        <span class="nav-tagline">— 100% en ligne —</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#approche">Notre approche</a></li>
+      <li><a href="index.html#methodes">Nos méthodes</a></li>
+      <li><a href="index.html#classes">Les classes</a></li>
+      <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/33652182898" class="btn-nav" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#approche" class="mobile-link">Notre approche</a></li>
+      <li><a href="index.html#methodes" class="mobile-link">Nos méthodes</a></li>
+      <li><a href="index.html#classes" class="mobile-link">Les classes</a></li>
+      <li><a href="index.html#fonctionnement" class="mobile-link">Fonctionnement</a></li>
+      <li><a href="index.html#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="https://wa.me/33652182898" class="btn-nav mobile-cta" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="gs-hero">
+  <img src="hero-GS.jpg" alt="Classe Grande Section — Educ'Harmonia" class="gs-hero-img" loading="eager" />
+  <div class="gs-hero-overlay"></div>
+  <div class="gs-badge">🎨 Grande Section</div>
+  <h1>La Grande Section chez Educ'Harmonia :<br><em>Le Tremplin vers la Réussite.</em></h1>
+  <p>La Grande Section est une étape charnière. Notre mission est de transformer la curiosité naturelle de votre enfant en compétences solides, grâce à un cadre structuré, moderne et profondément bienveillant.</p>
+  <a href="index.html#classes" class="gs-back">← Retour aux classes</a>
+</section>
+
+<!-- CONTENU -->
+<div class="gs-content">
+
+  <!-- Socle académique -->
+  <div class="gs-bloc reveal">
+    <div class="gs-bloc-tag">📚 Un Socle Académique de Haut Niveau</div>
+    <p style="color:#57534e; margin-bottom:24px; line-height:1.75;">Nous avons choisi les méthodes les plus performantes pour garantir une base scolaire irréprochable :</p>
+    <div class="gs-methode-list">
+      <div class="gs-methode-item">
+        <h3>🔢 Mathématiques — Méthode de Singapour</h3>
+        <p>Votre enfant apprend à "penser mathématique". Par la manipulation d'objets concrets, il comprend les concepts en profondeur avant de passer aux chiffres. C'est l'assurance d'un esprit logique et d'une confiance totale face aux nombres.</p>
+      </div>
+      <div class="gs-methode-item">
+        <h3>📖 Français — Pédagogie Explicite</h3>
+        <p>Rien n'est laissé au hasard. Nous enseignons clairement chaque son et chaque geste d'écriture. Cette méthode structurée évite les zones d'ombre et prépare une entrée sereine et victorieuse dans la lecture au CP.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Éveil -->
+  <div class="gs-bloc reveal">
+    <div class="gs-bloc-tag">🌍 Un Éveil Complet et Stimulant</div>
+    <p style="color:#57534e; margin-bottom:24px; line-height:1.75;">Parce que l'excellence ne se limite pas aux cahiers, nous enrichissons le quotidien de nos élèves :</p>
+    <div class="gs-eveil-grid">
+      <div class="gs-eveil-card">
+        <h3>🎨 Arts Plastiques</h3>
+        <p>En explorant diverses techniques, l'enfant affine sa motricité fine — essentielle pour une belle écriture — et développe sa confiance en exprimant sa propre créativité.</p>
+      </div>
+      <div class="gs-eveil-card">
+        <h3>🔬 Découverte du Monde</h3>
+        <p>À travers l'expérimentation scientifique et l'observation de la nature, nous nourrissons son sens critique et sa compréhension du temps et de l'espace.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Engagement -->
+  <div class="gs-engagement reveal">
+    <h2>❤️ Notre Engagement : Sécurité et Épanouissement</h2>
+    <p>Nous comprenons vos attentes de parents. C'est pourquoi notre environnement mêle modernité numérique et authenticité des supports (bois, manipulation réelle).</p>
+    <div class="gs-resultat">
+      ✨ <strong>Le résultat :</strong> Un enfant autonome, heureux d'apprendre, qui possède toutes les clés — intellectuelles et émotionnelles — pour réussir son futur parcours scolaire.
+    </div>
+    <p class="gs-conclusion">Avec Educ'Harmonia, la Grande Section devient une aventure sereine vers l'excellence.</p>
+    <a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">💬 Inscrire mon enfant en GS</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Educ'Harmonia" class="footer-logo" />
+        <span>Educ'Harmonia</span>
+      </div>
+      <p>École primaire 100% en ligne, de la Grande Section au CM2.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html#approche">Notre approche</a></li>
+        <li><a href="index.html#methodes">Nos méthodes</a></li>
+        <li><a href="index.html#classes">Les classes</a></li>
+        <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:contact@educ-harmonia.fr">📧 contact@educ-harmonia.fr</a></li>
+        <li><a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">📱 06 52 18 28 98</a></li>
+        <li>🌐 www.educ-harmonia.fr</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Educ'Harmonia — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

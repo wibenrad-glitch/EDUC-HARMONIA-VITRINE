@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CM2 — Cours Moyen 2e année en ligne — Educ'Harmonia</title>
+  <meta name="description" content="Le CM2 chez Educ'Harmonia : l'envol vers le collège. Méthode Singapour, pédagogie explicite, maîtrise ultime du Soroban et citoyenneté mondiale. École primaire 100% en ligne." />
+  <meta property="og:title" content="CM2 — Cours Moyen 2e année en ligne — Educ'Harmonia" />
+  <meta property="og:description" content="Le CM2 chez Educ'Harmonia : méthode Singapour, pédagogie explicite, Soroban. Préparation optimale pour le collège, cours Zoom en direct." />
+  <meta property="og:image" content="logo-banniere.jpeg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="CM2 — Cours Moyen 2e année en ligne — Educ'Harmonia" />
+  <meta name="twitter:description" content="Le CM2 chez Educ'Harmonia : méthode Singapour, pédagogie explicite, Soroban. Préparation au collège, cours Zoom en direct." />
+  <meta name="twitter:image" content="logo-banniere.jpeg" />
+  <link rel="canonical" href="https://www.educ-harmonia.fr/cm2.html" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ── COULEURS CM2 : bleu indigo ── */
+    :root {
+      --cm2-main:  #3b82f6;
+      --cm2-light: #eff6ff;
+      --cm2-mid:   #bfdbfe;
+      --cm2-dark:  #1d4ed8;
+    }
+
+    .cm2-hero {
+      position: relative;
+      overflow: hidden;
+      border-bottom: 4px solid var(--cm2-main);
+      padding: 140px 24px 100px;
+      text-align: center;
+      min-height: 100vh;
+    }
+    .cm2-hero-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      z-index: 0;
+    }
+    .cm2-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.62) 0%, rgba(0,0,0,0.45) 100%);
+      z-index: 1;
+    }
+    .cm2-hero > *:not(.cm2-hero-img):not(.cm2-hero-overlay) {
+      position: relative;
+      z-index: 2;
+    }
+    .cm2-badge {
+      display: inline-block;
+      background: var(--cm2-main);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .cm2-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 16px;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.5);
+    }
+    .cm2-hero h1 em {
+      font-style: normal;
+      font-family: 'Lora', serif;
+      color: #bfdbfe;
+      background: none;
+      -webkit-text-fill-color: #bfdbfe;
+      text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+    }
+    .cm2-hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.92);
+      max-width: 660px;
+      margin: 0 auto 32px;
+      line-height: 1.75;
+      text-shadow: 0 1px 8px rgba(0,0,0,0.4);
+    }
+    .cm2-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: white;
+      color: var(--cm2-main);
+      font-weight: 800;
+      font-size: 0.9rem;
+      padding: 10px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 4px 16px rgba(59,130,246,0.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+      position: relative;
+      z-index: 1;
+    }
+    .cm2-back:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(59,130,246,0.3); }
+
+    /* ── CONTENU ── */
+    .cm2-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 80px 24px;
+    }
+
+    .cm2-bloc {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 40px 44px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border-top: 5px solid var(--cm2-main);
+    }
+    .cm2-bloc-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.3rem;
+      font-weight: 900;
+      color: var(--cm2-main);
+      margin-bottom: 20px;
+    }
+
+    .cm2-methode-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .cm2-methode-item {
+      background: var(--cm2-light);
+      border-radius: 16px;
+      padding: 24px 28px;
+      border-left: 5px solid var(--cm2-main);
+    }
+    .cm2-methode-item h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 8px;
+    }
+    .cm2-methode-item p {
+      color: #57534e;
+      font-size: 0.97rem;
+      line-height: 1.75;
+    }
+
+    /* Soroban */
+    .cm2-soroban {
+      background: linear-gradient(135deg, #eff6ff, #dbeafe);
+      border-radius: 20px;
+      padding: 32px 36px;
+      border: 2px solid var(--cm2-mid);
+    }
+    .cm2-soroban-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .cm2-soroban-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .cm2-soroban-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background: var(--cm2-main);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      margin-top: 2px;
+    }
+    .cm2-soroban-text h4 {
+      font-size: 0.95rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 4px;
+    }
+    .cm2-soroban-text p {
+      color: #57534e;
+      font-size: 0.93rem;
+      line-height: 1.65;
+    }
+
+    /* Éveil grid */
+    .cm2-eveil-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .cm2-eveil-card {
+      background: var(--cm2-light);
+      border-radius: 16px;
+      padding: 24px;
+      border-left: 5px solid #60a5fa;
+    }
+    .cm2-eveil-card h3 {
+      font-size: 1rem;
+      font-weight: 900;
+      color: #1c1917;
+      margin-bottom: 8px;
+    }
+    .cm2-eveil-card p {
+      color: #57534e;
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    /* CTA final */
+    .cm2-cta {
+      background: linear-gradient(135deg, var(--cm2-dark), var(--cm2-main));
+      border-radius: 24px;
+      padding: 48px;
+      color: white;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .cm2-cta h2 {
+      color: white;
+      font-size: 1.6rem;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+    .cm2-cta p {
+      color: rgba(255,255,255,0.92);
+      font-size: 1.05rem;
+      max-width: 580px;
+      margin: 0 auto 16px;
+      line-height: 1.75;
+    }
+    .cm2-engagement {
+      background: rgba(255,255,255,0.15);
+      border-radius: 16px;
+      padding: 20px 28px;
+      margin: 20px auto;
+      max-width: 580px;
+      font-size: 0.97rem;
+      color: white;
+      line-height: 1.8;
+      text-align: left;
+    }
+    .cm2-conclusion {
+      font-style: italic;
+      font-family: 'Lora', serif;
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.95);
+      margin: 16px 0 28px;
+    }
+    .cm2-cta a {
+      display: inline-block;
+      background: white;
+      color: var(--cm2-dark);
+      font-weight: 900;
+      padding: 14px 36px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-size: 1rem;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      transition: transform 0.2s;
+    }
+    .cm2-cta a:hover { transform: translateY(-2px); }
+
+    @media (max-width: 640px) {
+      .cm2-eveil-grid { grid-template-columns: 1fr; }
+      .cm2-bloc { padding: 28px 20px; }
+      .cm2-soroban { padding: 24px 20px; }
+      .cm2-cta { padding: 32px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-banniere.jpeg" alt="Educ'Harmonia" class="logo-img" />
+      <span class="nav-brand-wrap">
+        <span class="nav-brand">Institut Educ'Harmonia</span>
+        <span class="nav-tagline">— 100% en ligne —</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#approche">Notre approche</a></li>
+      <li><a href="index.html#methodes">Nos méthodes</a></li>
+      <li><a href="index.html#classes">Les classes</a></li>
+      <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/33652182898" class="btn-nav" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#approche" class="mobile-link">Notre approche</a></li>
+      <li><a href="index.html#methodes" class="mobile-link">Nos méthodes</a></li>
+      <li><a href="index.html#classes" class="mobile-link">Les classes</a></li>
+      <li><a href="index.html#fonctionnement" class="mobile-link">Fonctionnement</a></li>
+      <li><a href="index.html#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="https://wa.me/33652182898" class="btn-nav mobile-cta" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="cm2-hero">
+  <img src="hero-cm2.jpeg" alt="Classe CM2 — Educ'Harmonia" class="cm2-hero-img" loading="eager" />
+  <div class="cm2-hero-overlay"></div>
+  <div class="cm2-badge">🏆 CM2 — Cours Moyen 2e année</div>
+  <h1>Le CM2 chez Educ'Harmonia :<br><em>L'Envol vers le Collège.</em></h1>
+  <p>Le CM2 est l'année de la synthèse. Votre enfant consolide ses acquis et développe une méthodologie de travail rigoureuse pour aborder la suite de sa scolarité avec une confiance absolue.</p>
+  <a href="index.html#classes" class="cm2-back">← Retour aux classes</a>
+</section>
+
+<!-- CONTENU -->
+<div class="cm2-content">
+
+  <!-- Fondamentaux -->
+  <div class="cm2-bloc reveal">
+    <div class="cm2-bloc-tag">📚 L'Excellence des Fondamentaux</div>
+    <div class="cm2-methode-list">
+      <div class="cm2-methode-item">
+        <h3>📖 Français — Méthode Explicite</h3>
+        <p>L'accent est mis sur la rédaction complexe et l'analyse littéraire. Grâce à un enseignement structuré, l'élève maîtrise les subtilités de la langue française, l'orthographe grammaticale et la syntaxe, lui permettant d'exprimer sa pensée avec clarté et élégance.</p>
+      </div>
+      <div class="cm2-methode-item">
+        <h3>🔢 Mathématiques — Méthode de Singapour</h3>
+        <p>On approfondit la proportionnalité, les pourcentages et la géométrie complexe. La manipulation (bois, instruments de précision) reste au cœur de l'apprentissage pour ancrer les concepts abstraits avant d'automatiser les calculs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Soroban -->
+  <div class="cm2-bloc reveal">
+    <div class="cm2-bloc-tag">🧮 La Maîtrise Ultime : Le Soroban</div>
+    <p style="color:#57534e; margin-bottom:24px; line-height:1.75;">Au CM2, la pratique du boulier japonais atteint son sommet :</p>
+    <div class="cm2-soroban">
+      <div class="cm2-soroban-list">
+        <div class="cm2-soroban-item">
+          <div class="cm2-soroban-icon">⚡</div>
+          <div class="cm2-soroban-text">
+            <h4>Agilité Intellectuelle</h4>
+            <p>Le calcul mental rapide devient un réflexe, libérant de l'espace cognitif pour la résolution de problèmes complexes.</p>
+          </div>
+        </div>
+        <div class="cm2-soroban-item">
+          <div class="cm2-soroban-icon">🎯</div>
+          <div class="cm2-soroban-text">
+            <h4>Discipline et Concentration</h4>
+            <p>Cette maîtrise renforce la persévérance et la capacité de focalisation, des atouts majeurs pour le rythme du collège.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Éveil -->
+  <div class="cm2-bloc reveal">
+    <div class="cm2-bloc-tag">🌍 Curiosité et Citoyenneté</div>
+    <p style="color:#57534e; margin-bottom:24px; line-height:1.75;">Des élèves préparés à comprendre le monde et à y prendre leur place :</p>
+    <div class="cm2-eveil-grid">
+      <div class="cm2-eveil-card">
+        <h3>🌍 Histoire, Géo & Sciences</h3>
+        <p>Les élèves explorent l'époque contemporaine et les enjeux planétaires (développement durable, citoyenneté numérique). La démarche d'investigation est poussée jusqu'à la réalisation de projets concrets et d'exposés structurés.</p>
+      </div>
+      <div class="cm2-eveil-card">
+        <h3>🎨 Arts Plastiques</h3>
+        <p>L'art devient un terrain d'expérimentation mêlant techniques traditionnelles (dessin, peinture, bois) et outils modernes. C'est l'année de la réalisation d'un "chef-d'œuvre" personnel qui couronne leur parcours primaire.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="cm2-cta reveal">
+    <h2>🛡️ Pourquoi est-ce rassurant pour vous ?</h2>
+    <p>Nous préparons l'élève à l'autonomie du secondaire sans jamais rompre le cadre bienveillant d'Educ'Harmonia :</p>
+    <div class="cm2-engagement">
+      ✓ &nbsp;<strong>Méthodologie</strong> : on apprend à apprendre, à organiser son travail et à gérer son temps.<br /><br />
+      ✓ &nbsp;<strong>Sérénité</strong> : les bases étant solidement posées, l'enfant n'aborde pas le collège avec des lacunes, mais avec une soif de découvrir.
+    </div>
+    <p class="cm2-conclusion">Le CM2 chez Educ'Harmonia : le point culminant d'une école qui prépare vraiment à la vie.</p>
+    <a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">💬 Inscrire mon enfant en CM2</a>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo.png" alt="Educ'Harmonia" class="footer-logo" />
+        <span>Educ'Harmonia</span>
+      </div>
+      <p>École primaire 100% en ligne, de la Grande Section au CM2.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html#approche">Notre approche</a></li>
+        <li><a href="index.html#methodes">Nos méthodes</a></li>
+        <li><a href="index.html#classes">Les classes</a></li>
+        <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:contact@educ-harmonia.fr">📧 contact@educ-harmonia.fr</a></li>
+        <li><a href="https://wa.me/33652182898" target="_blank" rel="noopener noreferrer">📱 06 52 18 28 98</a></li>
+        <li>🌐 www.educ-harmonia.fr</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Educ'Harmonia — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
