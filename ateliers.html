@@ -36,6 +36,13 @@
       background-position: center 19px;
       overflow: hidden;
     }
+    .ateliers-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 1;
+    }
     .ateliers-hero-content { position: relative; z-index: 2; }
     .ateliers-hero h1 {
       font-size: clamp(2.2rem, 5vw, 3.5rem);
