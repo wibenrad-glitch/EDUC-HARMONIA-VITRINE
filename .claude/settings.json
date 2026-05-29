@@ -11,7 +11,10 @@
       "Bash(git commit *)",
       "Bash(git gc *)",
       "Bash(git add *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(findstr \"flamme\\\\|hero principal\")",
+      "Bash(findstr \"btn-login\\\\|logo-img\\\\|nav-tagline\")",
+      "Bash(findstr \"\\\\.html\")"
     ],
     "additionalDirectories": [
       "C:\\Users\\SALAM\\eve-education\\prisma"
