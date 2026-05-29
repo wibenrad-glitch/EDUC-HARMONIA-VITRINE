@@ -3580,3 +3580,50 @@ footer {
   .exp-intro { flex-direction: column; padding: 24px; }
   .cta-reassurance { flex-direction: column; gap: 10px; }
 }
+
+/* ═══════════════════════════════════════════
+   CORRECTIONS MOBILE AUDIT
+═══════════════════════════════════════════ */
+@media (max-width: 700px) {
+
+  /* 1. Carrousel cartes méthodes */
+  .carrousel-track { gap: 12px; }
+  .duo-card { min-width: 220px; padding: 20px 16px; }
+  .duo-img img { max-height: 120px; }
+
+  /* 2. Frise journée type */
+  .frise-etapes {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 8px;
+  }
+  .frise-haut, .frise-bas { flex-direction: column; align-items: flex-start; }
+  .frise-card { width: 100%; }
+  .frise-courbe { display: none; }
+  .frise-dot { display: none; }
+
+  /* 3. Zones cliquables classes sur image — plus grandes pour le doigt */
+  .classes-img-link { padding: 12px 0; }
+  .carte-btn { font-size: 0.72rem; padding: 6px 10px; }
+
+  /* 4. Sélecteur de classe tarifs */
+  .tarif-classes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .tarif-classe-btn { font-size: 0.78rem; padding: 8px 4px; }
+
+  /* 5. Formulaire — champs en colonne */
+  .form-row { flex-direction: column; gap: 12px; }
+  .form-groupe { width: 100%; }
+
+  /* 6. Footer bottom */
+  .footer-bottom { flex-direction: column; text-align: center; gap: 6px; font-size: 0.72rem; }
+  .footer-bottom p { margin: 0; }
+
+  /* Padding général sections */
+  section { padding: 48px 0; }
+  .container { padding: 0 16px; }
+}
