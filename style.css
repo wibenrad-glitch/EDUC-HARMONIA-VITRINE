@@ -3,6 +3,7 @@
 ═══════════════════════════════════════════ */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+img, video, iframe { max-width: 100%; }
 
 :root {
   --jaune:        #fbbf24;
@@ -32,7 +33,7 @@
   --transition:   0.25s ease;
 }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; overflow-x: hidden; max-width: 100%; }
 
 body {
   font-family: 'Nunito', system-ui, sans-serif;
@@ -3586,10 +3587,7 @@ footer {
 ═══════════════════════════════════════════ */
 @media (max-width: 700px) {
 
-  /* 1. Carrousel cartes méthodes */
-  .carrousel-track { gap: 12px; }
-  .duo-card { min-width: 220px; padding: 20px 16px; }
-  .duo-img img { max-height: 120px; }
+  /* 1. Carrousel cartes méthodes — taille originale conservée */
 
   /* 2. Frise journée type */
   .frise-etapes {
