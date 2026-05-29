@@ -41,6 +41,22 @@ mobileLinks.forEach(link => {
   });
 });
 
+/* ─── GROUPES REPLIABLES MOBILE ─── */
+document.querySelectorAll('.mobile-group-toggle').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const group = btn.parentElement;
+    group.classList.toggle('open');
+  });
+});
+
+document.querySelectorAll('.mobile-sublink').forEach(link => {
+  link.addEventListener('click', () => {
+    burger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
+  });
+});
+
 /* ─── NAVBAR AU SCROLL ─── */
 window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);

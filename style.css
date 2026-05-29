@@ -426,6 +426,45 @@ section { padding: 72px 0; }
   transition: color var(--transition);
 }
 .mobile-link:hover { color: var(--orange); }
+/* Groupes repliables mobile */
+.mobile-group { border-bottom: 1px solid #f5f5f4; }
+.mobile-group-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 14px 0;
+  background: none;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1c1917;
+  cursor: pointer;
+  text-align: left;
+}
+.mobile-arrow { transition: transform 0.25s; font-size: 0.8rem; }
+.mobile-group.open .mobile-arrow { transform: rotate(180deg); }
+.mobile-group-list {
+  display: none;
+  list-style: none;
+  padding: 0 0 8px 16px;
+  border-left: 3px solid #18B7A0;
+  margin-left: 8px;
+  margin-bottom: 8px;
+}
+.mobile-group.open .mobile-group-list { display: block; }
+.mobile-sublink {
+  display: block;
+  padding: 9px 0;
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 600;
+  color: #44403c;
+  transition: color 0.2s;
+}
+.mobile-sublink:hover { color: #18B7A0; }
+
 .mobile-cta {
   display: block;
   margin-top: 10px;
