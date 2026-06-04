@@ -637,6 +637,7 @@ section { padding: 72px 0; }
 .carrousel-track:active { cursor: grabbing; }
 .carrousel-track .duo-card {
   flex: 0 0 420px;
+  /* mobile: voir media query 480px */
   height: auto;
   scroll-snap-align: start;
   position: relative;
@@ -3594,6 +3595,10 @@ footer {
 /* ═══════════════════════════════════════════
    CORRECTIONS MOBILE AUDIT
 ═══════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .carrousel-track .duo-card { flex: 0 0 300px; }
+}
+
 @media (max-width: 700px) {
 
   /* 1. Carrousel cartes méthodes — taille originale conservée */
