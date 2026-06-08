@@ -3369,6 +3369,7 @@ section { padding: 72px 0; }
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(13,45,108,0.35);
 }
+.submit-court { display: none; }
 @media (max-width: 600px) {
   .form-row { grid-template-columns: 1fr; }
   .formulaire-inscription { padding: 28px 20px; }
@@ -3615,21 +3616,24 @@ footer {
   .frise-courbe { display: none; }
   .frise-dot { display: none; }
 
-  /* 3. Zones cliquables classes sur image — plus grandes pour le doigt */
-  .classes-img-link { padding: 12px 0; }
-  .carte-btn { font-size: 0.72rem; padding: 6px 10px; }
+  /* 3. Zones cliquables classes sur image — min 44px tactile */
+  .classes-img-link { min-height: 44px; }
+  .carte-btn { font-size: 0.7rem; padding: 7px 12px; bottom: 6%; }
 
-  /* 4. Sélecteur de classe tarifs */
+  /* 4. Sélecteur de classe tarifs — grille 3 col, abréviations auto */
   .tarif-classes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 6px;
   }
-  .tarif-classe-btn { font-size: 0.78rem; padding: 8px 4px; }
+  .tarif-classe-btn { font-size: 0.76rem; padding: 9px 4px; min-height: 44px; }
 
   /* 5. Formulaire — champs en colonne */
   .form-row { flex-direction: column; gap: 12px; }
   .form-groupe { width: 100%; }
+  .form-submit { font-size: 0.88rem; padding: 14px 12px; }
+  .submit-long { display: none; }
+  .submit-court { display: inline; }
 
   /* 6. Footer bottom */
   .footer-bottom { flex-direction: column; text-align: center; gap: 6px; font-size: 0.72rem; }
