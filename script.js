@@ -160,7 +160,7 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   };
 
   const tarifs = {
-    'Maternelle': { mensuel: 60, mensuelDetail: 'Soit 600 € sur 10 mois', trimestriel: 180, trimestrielDetail: 'Soit 540 € sur 3 trimestres', trimestrielEco: '60 € d\'économie', annuel: 500, annuelDetail: 'Soit 500 € en 1 fois', annuelEco: '100 € d\'économie' },
+    'Maternelle': { mensuel: 60, mensuelDetail: 'Soit 600 € sur 10 mois', trimestriel: 180, trimestrielDetail: 'Soit 540 € sur 3 trimestres', trimestrielEco: '60 € d\'économie', annuel: 540, annuelDetail: 'Soit 540 € en 1 fois', annuelEco: '60 € d\'économie' },
     'default':    { mensuel: 90, mensuelDetail: 'Soit 900 € sur 10 mois', trimestriel: 280, trimestrielDetail: 'Soit 840 € sur 3 trimestres', trimestrielEco: '60 € d\'économie', annuel: 800, annuelDetail: 'Soit 800 € en 1 fois', annuelEco: '100 € d\'économie' },
   };
 

@@ -14,10 +14,25 @@
       "Bash(git push *)",
       "Bash(findstr \"flamme\\\\|hero principal\")",
       "Bash(findstr \"btn-login\\\\|logo-img\\\\|nav-tagline\")",
-      "Bash(findstr \"\\\\.html\")"
+      "Bash(findstr \"\\\\.html\")",
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\('bd-educ.jpeg'\\); print\\(img.size\\)\")",
+      "Bash(python3 -c \"from PIL import Image; img = Image.open\\('C:/Users/SALAM/Downloads/bd-educ.jpeg'\\); print\\(img.size\\)\")",
+      "PowerShell(python -c \"from PIL import Image; img = Image.open\\('C:\\\\Users\\\\SALAM\\\\Downloads\\\\bd-educ.jpeg'\\); print\\(img.size\\)\")",
+      "PowerShell(python -c \"from PIL import Image; img = Image.open\\(r'C:\\\\Users\\\\SALAM\\\\Downloads\\\\bd-educ.jpeg'\\); print\\(img.size\\)\")",
+      "Bash(Get-ChildItem -Path C:\\\\Users\\\\SALAM -Recurse -Directory -Filter \"*energy*\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-ChildItem -Path C:\\\\Users\\\\SALAM\\\\Downloads, C:\\\\Users\\\\SALAM\\\\Documents, C:\\\\Users\\\\SALAM\\\\Desktop -Directory -ErrorAction SilentlyContinue | Where-Object { $_.Name -match \"bati|portant|batiment\" } | Select-Object FullName)",
+      "PowerShell(Compress-Archive -Path \"C:\\\\Users\\\\SALAM\\\\Downloads\\\\engbat\" -DestinationPath \"C:\\\\Users\\\\SALAM\\\\Downloads\\\\engbat.zip\" -Force)",
+      "Bash(Get-ChildItem -Recurse -File)",
+      "WebFetch(domain:transfertpriveparis.fr)",
+      "Bash(Rename-Item \"C:\\\\Users\\\\SALAM\\\\Downloads\\\\SITE VAN ES\\\\index.html.html\" \"index.html\")",
+      "Bash(sed -i 's|https://wa.me/33652182898|https://wa.me/33759067224|g' index.html gs.html cp.html cm2.html cm1.html ce2.html ce1.html ateliers.html)",
+      "Bash(sed -i 's|06 52 18 28 98|07 59 06 72 24|g' index.html gs.html cp.html cm2.html cm1.html ce2.html ce1.html ateliers.html)"
     ],
     "additionalDirectories": [
-      "C:\\Users\\SALAM\\eve-education\\prisma"
+      "C:\\Users\\SALAM\\eve-education\\prisma",
+      "C:\\Users\\SALAM\\Downloads\\SITE VAN\\engbat",
+      "C:\\Users\\SALAM\\Downloads\\engbat",
+      "C:\\Users\\SALAM\\Downloads"
     ]
   }
 }
