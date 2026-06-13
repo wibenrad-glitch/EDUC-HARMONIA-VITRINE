@@ -325,6 +325,65 @@
     </div>
   </div>
 
+  <!-- Emploi du temps -->
+  <div class="gs-bloc reveal" style="--edt-color:#f43f5e;">
+    <div class="gs-bloc-tag">📅 Organisation des cours</div>
+
+    <div class="edt-tabs">
+      <button class="edt-tab active" onclick="edtTab(this,'gs-prog')">📚 Programme</button>
+      <button class="edt-tab" onclick="edtTab(this,'gs-edt')">🗓️ Emploi du temps</button>
+    </div>
+
+    <!-- Panneau Programme -->
+    <div class="edt-panel active" id="gs-prog">
+      <p style="color:#57534e;line-height:1.75;margin-bottom:16px;">La Grande Section suit un programme structuré sur 4 semaines en rotation, avec 3 séances d'1h par semaine. Chaque séance travaille une matière différente pour un éveil complet.</p>
+      <ul style="color:#57534e;line-height:2;padding-left:20px;">
+        <li><strong>Français</strong> — pédagogie explicite, préparation à la lecture</li>
+        <li><strong>Mathématiques</strong> — méthode Singapour, manipulation concrète</li>
+        <li><strong>Soroban</strong> — calcul mental, concentration</li>
+        <li><strong>Arts plastiques</strong> — motricité fine, créativité</li>
+        <li><strong>Découverte du monde</strong> — sciences, nature, curiosité</li>
+        <li><strong>Expression orale</strong> — langage, vocabulaire, confiance</li>
+      </ul>
+    </div>
+
+    <!-- Panneau Emploi du temps -->
+    <div class="edt-panel" id="gs-edt">
+      <div class="edt-info">
+        <span>🕘</span>
+        <div>Lundi · Mercredi · Vendredi &nbsp;|&nbsp; <strong>9h30 – 10h30</strong> (1h par séance)</div>
+      </div>
+
+      <div class="edt-semaines">
+        <button class="edt-sem-btn active" onclick="edtSem(this,'gs',1)">Semaine 1</button>
+        <button class="edt-sem-btn" onclick="edtSem(this,'gs',2)">Semaine 2</button>
+        <button class="edt-sem-btn" onclick="edtSem(this,'gs',3)">Semaine 3</button>
+        <button class="edt-sem-btn" onclick="edtSem(this,'gs',4)">Semaine 4</button>
+      </div>
+
+      <div class="edt-grille gs-grille" id="gs-sem-1">
+        <div class="edt-jour"><div class="edt-jour-nom">Lundi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mercredi</div><div class="edt-matiere"><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Vendredi</div><div class="edt-matiere"><span class="edt-pill soroban">🧮 Soroban</span></div></div>
+      </div>
+      <div class="edt-grille gs-grille" id="gs-sem-2" style="display:none;">
+        <div class="edt-jour"><div class="edt-jour-nom">Lundi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mercredi</div><div class="edt-matiere"><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Vendredi</div><div class="edt-matiere"><span class="edt-pill arts">🎨 Arts plastiques</span></div></div>
+      </div>
+      <div class="edt-grille gs-grille" id="gs-sem-3" style="display:none;">
+        <div class="edt-jour"><div class="edt-jour-nom">Lundi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mercredi</div><div class="edt-matiere"><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Vendredi</div><div class="edt-matiere"><span class="edt-pill arts">🎨 Arts plastiques</span></div></div>
+      </div>
+      <div class="edt-grille gs-grille" id="gs-sem-4" style="display:none;">
+        <div class="edt-jour"><div class="edt-jour-nom">Lundi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mercredi</div><div class="edt-matiere"><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Vendredi</div><div class="edt-matiere"><span class="edt-pill oral">🗣️ Expression orale</span></div></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Engagement -->
   <div class="gs-engagement reveal">
     <h2>❤️ Notre Engagement : Sécurité et Épanouissement</h2>
@@ -373,5 +432,23 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+function edtTab(btn, panelId) {
+  const bloc = btn.closest('.gs-bloc, .cp-bloc, .ce1-bloc, .ce2-bloc, .cm1-bloc, .cm2-bloc');
+  bloc.querySelectorAll('.edt-tab').forEach(t => t.classList.remove('active'));
+  bloc.querySelectorAll('.edt-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(panelId).classList.add('active');
+}
+function edtSem(btn, prefix, num) {
+  const bloc = btn.closest('.gs-bloc, .cp-bloc, .ce1-bloc, .ce2-bloc, .cm1-bloc, .cm2-bloc');
+  bloc.querySelectorAll('.edt-sem-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById(prefix + '-sem-' + i);
+    if (el) el.style.display = i === num ? 'grid' : 'none';
+  }
+}
+</script>
 </body>
 </html>

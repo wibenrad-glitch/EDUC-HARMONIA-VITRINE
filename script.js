@@ -192,6 +192,37 @@ document.querySelectorAll('.faq-question').forEach(btn => {
   });
 })();
 
+/* ─── FORMULAIRE INSCRIPTION → Formspree + WhatsApp ─── */
+(function() {
+  const form = document.getElementById('form-inscription');
+  if (!form) return;
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+    const prenom  = data.get('enfant_prenom') || '';
+    const nom     = data.get('enfant_nom') || '';
+    const classe  = data.get('enfant_classe') || '';
+    const pParent = data.get('parent_prenom') || '';
+    const tel     = data.get('parent_tel') || '';
+    const email   = data.get('parent_email') || '';
+
+    try {
+      await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      });
+    } catch(_) {}
+
+    const msg = `Nouvelle inscription Educ'Harmonia 📚\n\nEnfant : ${prenom} ${nom} (${classe})\nParent : ${pParent}\nTél : ${tel}\nEmail : ${email}`;
+    window.open('https://wa.me/33759067224?text=' + encodeURIComponent(msg), '_blank');
+
+    form.innerHTML = '<div style="text-align:center;padding:40px 20px;"><div style="font-size:3rem;">✅</div><h3 style="color:#16a34a;margin:16px 0 8px;">Demande envoyée !</h3><p>Nous vous recontactons sous 24h. Un message WhatsApp vient d\'être préparé pour nous.</p></div>';
+  });
+})();
+
 /* ─── SMOOTH SCROLL pour les ancres ─── */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', (e) => {

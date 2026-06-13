@@ -407,6 +407,71 @@
     </div>
   </div>
 
+  <!-- Emploi du temps -->
+  <div class="cp-bloc reveal" style="--edt-color:#f97316;">
+    <div class="cp-bloc-tag">📅 Organisation des cours</div>
+
+    <div class="edt-tabs">
+      <button class="edt-tab active" onclick="edtTab(this,'cp-prog')">📚 Programme</button>
+      <button class="edt-tab" onclick="edtTab(this,'cp-edt')">🗓️ Emploi du temps</button>
+    </div>
+
+    <div class="edt-panel active" id="cp-prog">
+      <p style="color:#57534e;line-height:1.75;margin-bottom:16px;">Le CP suit un programme sur 4 semaines en rotation, avec 5 séances de 2h par semaine. Chaque séance couvre Français + une 2e matière.</p>
+      <ul style="color:#57534e;line-height:2;padding-left:20px;">
+        <li><strong>Français</strong> — chaque jour, méthode explicite</li>
+        <li><strong>Mathématiques</strong> — méthode Singapour, 4 jours sur 5</li>
+        <li><strong>Soroban</strong> — semaine 1 (mercredi)</li>
+        <li><strong>Arts plastiques</strong> — semaine 2 (mercredi)</li>
+        <li><strong>Découverte du monde</strong> — semaine 3 (mercredi)</li>
+        <li><strong>Mathématiques renforcées</strong> — semaine 4 (mercredi)</li>
+      </ul>
+    </div>
+
+    <div class="edt-panel" id="cp-edt">
+      <div class="edt-info">
+        <span>🕙</span>
+        <div>Lundi · Mardi · Mercredi · Jeudi · Vendredi &nbsp;|&nbsp; <strong>10h30 – 12h30</strong> (2h par séance)</div>
+      </div>
+
+      <div class="edt-semaines">
+        <button class="edt-sem-btn active" onclick="edtSem(this,'cp',1)">Semaine 1</button>
+        <button class="edt-sem-btn" onclick="edtSem(this,'cp',2)">Semaine 2</button>
+        <button class="edt-sem-btn" onclick="edtSem(this,'cp',3)">Semaine 3</button>
+        <button class="edt-sem-btn" onclick="edtSem(this,'cp',4)">Semaine 4</button>
+      </div>
+
+      <div class="edt-grille cp-grille" id="cp-sem-1">
+        <div class="edt-jour"><div class="edt-jour-nom">Lundi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mardi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mercredi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill soroban">🧮 Soroban</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Jeudi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Vendredi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+      </div>
+      <div class="edt-grille cp-grille" id="cp-sem-2" style="display:none;">
+        <div class="edt-jour"><div class="edt-jour-nom">Lundi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mardi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mercredi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill arts">🎨 Arts plastiques</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Jeudi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Vendredi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+      </div>
+      <div class="edt-grille cp-grille" id="cp-sem-3" style="display:none;">
+        <div class="edt-jour"><div class="edt-jour-nom">Lundi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mardi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mercredi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill monde">🌍 Découverte du monde</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Jeudi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Vendredi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+      </div>
+      <div class="edt-grille cp-grille" id="cp-sem-4" style="display:none;">
+        <div class="edt-jour"><div class="edt-jour-nom">Lundi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mardi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Mercredi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Jeudi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+        <div class="edt-jour"><div class="edt-jour-nom">Vendredi</div><div class="edt-matiere"><span class="edt-pill fr">📖 Français</span><span class="edt-pill math">🔢 Maths</span></div></div>
+      </div>
+    </div>
+  </div>
+
   <!-- Promesse -->
   <div class="cp-promesse reveal">
     <h2>🌟 La Promesse Educ'Harmonia</h2>
@@ -455,5 +520,23 @@
 </footer>
 
 <script src="script.js"></script>
+<script>
+function edtTab(btn, panelId) {
+  const bloc = btn.closest('[class$="-bloc"]') || btn.closest('.cp-bloc') || btn.closest('.gs-bloc');
+  bloc.querySelectorAll('.edt-tab').forEach(t => t.classList.remove('active'));
+  bloc.querySelectorAll('.edt-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById(panelId).classList.add('active');
+}
+function edtSem(btn, prefix, num) {
+  const bloc = btn.closest('[class$="-bloc"]') || btn.closest('.cp-bloc') || btn.closest('.gs-bloc');
+  bloc.querySelectorAll('.edt-sem-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  for (let i = 1; i <= 4; i++) {
+    const el = document.getElementById(prefix + '-sem-' + i);
+    if (el) el.style.display = i === num ? 'grid' : 'none';
+  }
+}
+</script>
 </body>
 </html>

@@ -3636,10 +3636,137 @@ footer {
   .submit-court { display: inline; }
 
   /* 6. Footer bottom */
-  .footer-bottom { flex-direction: column; text-align: center; gap: 6px; font-size: 0.72rem; }
+  .footer-bottom { flex-template-columns: 1fr; flex-direction: column; text-align: center; gap: 6px; font-size: 0.72rem; }
   .footer-bottom p { margin: 0; }
 
   /* Padding général sections */
   section { padding: 48px 0; }
   .container { padding: 0 16px; }
+}
+
+/* ═══════════════════════════════════════════
+   EMPLOI DU TEMPS — ONGLETS CLASSES
+═══════════════════════════════════════════ */
+
+/* Onglets Programme / Emploi du temps */
+.edt-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 28px;
+  border-bottom: 2px solid #e7e5e4;
+  padding-bottom: 0;
+}
+.edt-tab {
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  padding: 10px 20px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #78716c;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+.edt-tab.active {
+  color: var(--edt-color, #f43f5e);
+  border-bottom-color: var(--edt-color, #f43f5e);
+}
+.edt-panel { display: none; }
+.edt-panel.active { display: block; }
+
+/* Info horaires */
+.edt-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #f8fafc;
+  border-radius: 14px;
+  padding: 16px 20px;
+  margin-bottom: 24px;
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: #1c1917;
+  border-left: 4px solid var(--edt-color, #f43f5e);
+}
+.edt-info span { font-size: 1.3rem; }
+
+/* Sélecteur de semaine */
+.edt-semaines {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.edt-sem-btn {
+  background: #f5f5f4;
+  border: 2px solid #e7e5e4;
+  border-radius: 50px;
+  padding: 7px 16px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #78716c;
+  cursor: pointer;
+  transition: all 0.18s;
+}
+.edt-sem-btn.active {
+  background: var(--edt-color, #f43f5e);
+  border-color: var(--edt-color, #f43f5e);
+  color: white;
+}
+
+/* Grille des jours */
+.edt-grille {
+  display: grid;
+  gap: 12px;
+}
+.edt-grille.gs-grille { grid-template-columns: repeat(3, 1fr); }
+.edt-grille.cp-grille { grid-template-columns: repeat(5, 1fr); }
+
+.edt-jour {
+  background: white;
+  border-radius: 16px;
+  padding: 16px 14px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  border-top: 4px solid var(--edt-color, #f43f5e);
+  text-align: center;
+}
+.edt-jour-nom {
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #78716c;
+  margin-bottom: 10px;
+}
+.edt-matiere {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.edt-pill {
+  background: #f5f5f4;
+  border-radius: 20px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #1c1917;
+}
+.edt-pill.math   { background: #fef3c7; color: #92400e; }
+.edt-pill.fr     { background: #eff6ff; color: #1e40af; }
+.edt-pill.soroban{ background: #fce7f3; color: #9d174d; }
+.edt-pill.arts   { background: #f0fdf4; color: #166534; }
+.edt-pill.monde  { background: #ede9fe; color: #5b21b6; }
+.edt-pill.oral   { background: #fff7ed; color: #9a3412; }
+
+@media (max-width: 640px) {
+  .edt-grille.gs-grille { grid-template-columns: repeat(3, 1fr); }
+  .edt-grille.cp-grille { grid-template-columns: repeat(2, 1fr) !important; }
+  .edt-jour { padding: 12px 8px; }
+  .edt-pill { font-size: 0.72rem; padding: 5px 6px; }
+  .edt-jour-nom { font-size: 0.72rem; }
+  .edt-tabs { flex-wrap: wrap; }
+  .edt-tab { font-size: 0.85rem; padding: 8px 14px; }
 }
