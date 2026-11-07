@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Conseils pour l'école à la maison et l'école en ligne — Educ'Harmonia</title>
+  <meta name="description" content="Instruction en famille, école primaire en ligne, méthodes d'apprentissage : les conseils et guides pratiques d'Educ'Harmonia pour les parents, de la Grande Section au CM2." />
+  <meta property="og:title" content="Le blog d'Educ'Harmonia" />
+  <meta property="og:description" content="Guides pratiques pour les parents : instruction en famille, école en ligne, méthodes d'apprentissage." />
+  <meta property="og:image" content="https://www.educ-harmonia.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Educ'Harmonia — l'école primaire en ligne, de la Grande Section au CM2" />
+  <meta property="og:url" content="https://www.educ-harmonia.com/blog/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Educ'Harmonia" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Le blog d'Educ'Harmonia" />
+  <meta name="twitter:description" content="Guides pratiques pour les parents : instruction en famille, école en ligne, méthodes d'apprentissage." />
+  <meta name="twitter:image" content="https://www.educ-harmonia.com/og-image.jpg" />
+  <link rel="canonical" href="https://www.educ-harmonia.com/blog/" />
+  <link rel="icon" href="../favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    .blog-hero {
+      background: var(--orange-clair);
+      border-bottom: 4px solid var(--orange);
+      padding: 140px 24px 56px;
+      text-align: center;
+    }
+    .blog-hero h1 {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 900;
+      font-size: clamp(1.9rem, 4.5vw, 2.8rem);
+      line-height: 1.15;
+      margin: 0 auto;
+      color: var(--texte);
+    }
+    .blog-hero p { max-width: 640px; margin: 14px auto 0; color: #57534e; font-size: 1.08rem; }
+    .blog-liste {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+      display: grid;
+      gap: 24px;
+    }
+    .blog-carte {
+      display: block;
+      background: var(--blanc);
+      border-radius: var(--radius-md);
+      padding: 28px;
+      box-shadow: var(--shadow-md);
+      border: 2px solid transparent;
+      color: inherit;
+      text-decoration: none;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .blog-carte:hover { border-color: var(--orange); transform: translateY(-2px); }
+    .blog-carte h2 { font-family: 'Nunito', sans-serif; font-weight: 900; font-size: 1.4rem; line-height: 1.25; margin: 10px 0 8px; color: var(--texte); }
+    .blog-carte p { margin: 0 0 12px; color: #57534e; line-height: 1.6; }
+    .blog-carte .blog-lire { font-weight: 800; color: #c2410c; }
+    @media (max-width: 600px) {
+      .blog-hero { padding: 110px 16px 40px; }
+      .blog-liste { padding: 32px 16px 56px; }
+      .blog-carte { padding: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-logo">
+      <img src="../logo-banniere.jpeg" alt="Educ'Harmonia" class="logo-img" />
+      <span class="nav-brand-wrap">
+        <span class="nav-brand">Institut Educ'Harmonia</span>
+        <span class="nav-tagline">— 100% en ligne —</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../index.html#approche">Notre approche</a></li>
+      <li><a href="../index.html#methodes">Nos méthodes</a></li>
+      <li><a href="../index.html#classes">Les classes</a></li>
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="../index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/33759067224" class="btn-nav" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="../index.html#approche" class="mobile-link">Notre approche</a></li>
+      <li><a href="../index.html#methodes" class="mobile-link">Nos méthodes</a></li>
+      <li><a href="../index.html#classes" class="mobile-link">Les classes</a></li>
+      <li><a href="index.html" class="mobile-link">Blog</a></li>
+      <li><a href="../index.html#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="https://wa.me/33759067224" class="btn-nav mobile-cta" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="blog-hero">
+  <h1>Le blog d'Educ'Harmonia</h1>
+  <p>Des guides clairs pour les parents : instruction en famille, école en ligne et méthodes d'apprentissage, de la Grande Section au CM2.</p>
+</header>
+
+<main class="blog-liste">
+  <a class="blog-carte" href="instruction-en-famille-primaire.html">
+    <span class="tag tag-bleu">📚 Instruction en famille</span>
+    <h2>Instruction en famille (IEF) en primaire : démarches et autorisation en 2026</h2>
+    <p>Les 4 motifs d'autorisation, le calendrier de la demande, le dossier, les recours et les contrôles : le guide pour préparer sereinement l'école à la maison.</p>
+    <span class="blog-lire">Lire l'article →</span>
+  </a>
+</main>
+
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="../logo-banniere.jpeg" alt="Educ'Harmonia" class="footer-logo" />
+        <span>Educ'Harmonia</span>
+      </div>
+      <p>École primaire 100% en ligne, de la Grande Section au CM2.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="../index.html#approche">Notre approche</a></li>
+        <li><a href="../index.html#methodes">Nos méthodes</a></li>
+        <li><a href="../index.html#classes">Les classes</a></li>
+        <li><a href="index.html">Blog</a></li>
+        <li><a href="../index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:contact@educ-harmonia.com">📧 contact@educ-harmonia.com</a></li>
+        <li><a href="https://wa.me/33759067224" target="_blank" rel="noopener noreferrer">📱 07 59 06 72 24</a></li>
+        <li>🌐 www.educ-harmonia.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Educ'Harmonia — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>

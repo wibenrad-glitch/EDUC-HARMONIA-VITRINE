@@ -3480,7 +3480,7 @@ footer {
   gap: 10px;
   margin-bottom: 16px;
 }
-.footer-logo { height: 40px; width: auto; }
+.footer-logo { height: 40px; width: auto; border-radius: 8px; }
 .footer-logo-wrap span { color: white; font-size: 1.1rem; font-weight: 800; }
 
 .footer-brand p {
