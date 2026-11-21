@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/boussole", "destination": "https://boussole-maths.vercel.app/boussole" },
+    { "source": "/boussole/:path*", "destination": "https://boussole-maths.vercel.app/boussole/:path*" }
+  ]
+}
