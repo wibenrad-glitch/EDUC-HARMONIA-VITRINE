@@ -2,7 +2,7 @@
  * Les Petits Matheux : mise en cache pour jouer sans réseau.
  * Changer VERSION à chaque mise en ligne force la mise à jour du cache.
  */
-const VERSION = 'petits-matheux-v4';
+const VERSION = 'petits-matheux-v5';
 const BASE = new URL('./', self.location).href;
 const POLICES = ['https://fonts.googleapis.com', 'https://fonts.gstatic.com'];
 
