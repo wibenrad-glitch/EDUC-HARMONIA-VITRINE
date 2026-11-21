@@ -242,6 +242,24 @@
     }
     .gs-engagement a:hover { transform: translateY(-2px); }
 
+    /* Jeu Les Petits Matheux */
+    .gs-jeu { background: linear-gradient(135deg, #e0f2fe, #fff7ed); border-top-color: #0ea5e9; }
+    .gs-jeu .gs-bloc-tag { color: #0369a1; }
+    .gs-jeu-points { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 10px; color: #44403c; line-height: 1.6; }
+    .gs-jeu-btn {
+      display: inline-block;
+      background: #f43f5e;
+      color: white;
+      font-weight: 900;
+      font-size: 1.05rem;
+      padding: 14px 34px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(244,63,94,0.3);
+      transition: transform 0.2s;
+    }
+    .gs-jeu-btn:hover { transform: translateY(-2px); }
+
     @media (max-width: 640px) {
       .gs-eveil-grid { grid-template-columns: 1fr; }
       .gs-bloc { padding: 28px 20px; }
@@ -314,6 +332,20 @@
         <p>Rien n'est laissé au hasard. Nous enseignons clairement chaque son et chaque geste d'écriture. Cette méthode structurée évite les zones d'ombre et prépare une entrée sereine et victorieuse dans la lecture au CP.</p>
       </div>
     </div>
+  </div>
+
+  <!-- Jeu Les Petits Matheux -->
+  <div class="gs-bloc gs-jeu reveal">
+    <div class="gs-bloc-tag">🎮 Nouveau : le jeu Les Petits Matheux</div>
+    <h2>Les maths de la Grande Section, en jouant avec Lumy</h2>
+    <p style="color:#57534e;line-height:1.75;margin-bottom:20px;">Un jeu gratuit pour prolonger la méthode de Singapour à la maison, sur tablette ou ordinateur. Votre enfant voyage sur 7 îles : compter jusqu'à 10, la boîte de dix, décomposer les nombres, comparer, ajouter et retirer, les formes et les suites, puis les nombres jusqu'à 20. Chaque île passe du <strong>concret</strong> à l'<strong>image</strong> puis au <strong>chiffre</strong>, comme en classe.</p>
+    <ul class="gs-jeu-points">
+      <li>🗣️ Toutes les consignes sont lues à voix haute : pas besoin de savoir lire.</li>
+      <li>⏱️ Des séances de 10 minutes, puis Lumy propose une pause.</li>
+      <li>📊 Un bilan bienveillant pour les parents et des fiches à imprimer.</li>
+      <li>🔒 Sans compte, sans publicité, aucune donnée envoyée.</li>
+    </ul>
+    <a href="petits-matheux/" class="gs-jeu-btn">▶ Jouer aux Petits Matheux</a>
   </div>
 
   <!-- Éveil -->
