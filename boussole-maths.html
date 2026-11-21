@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boussole Maths — soutien en maths pour enfants TDA/TDAH, CM2-6e — Educ'Harmonia</title>
+  <meta name="description" content="Boussole Maths : le soutien en maths pensé pour les profils TDA/TDAH. Fractions, géométrie et mémoire de travail en séances courtes, avec un bilan clair pour les parents." />
+  <meta property="og:title" content="Boussole Maths — le soutien en maths pensé pour les profils TDA/H" />
+  <meta property="og:description" content="Fractions, géométrie et mémoire de travail en séances courtes. Un parcours qui s'adapte à votre enfant, et un bilan pour vous." />
+  <meta property="og:image" content="https://www.educ-harmonia.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Educ'Harmonia — l'école primaire en ligne, de la Grande Section au CM2" />
+  <meta property="og:url" content="https://www.educ-harmonia.com/boussole-maths.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:site_name" content="Educ'Harmonia" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Boussole Maths — le soutien en maths pensé pour les profils TDA/H" />
+  <meta name="twitter:description" content="Fractions, géométrie et mémoire de travail en séances courtes, avec un bilan clair pour les parents." />
+  <meta name="twitter:image" content="https://www.educ-harmonia.com/og-image.jpg" />
+  <link rel="canonical" href="https://www.educ-harmonia.com/boussole-maths.html" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:ital,wght@0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Boussole Maths",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Navigateur web (ordinateur, tablette)",
+    "inLanguage": "fr",
+    "description": "Soutien adaptatif en maths pensé pour les profils TDA/H : fractions, géométrie et mémoire de travail, du CM1 à la 5e.",
+    "audience": { "@type": "EducationalAudience", "educationalRole": "student" },
+    "publisher": { "@type": "Organization", "name": "Educ'Harmonia", "url": "https://www.educ-harmonia.com/" }
+  }
+  </script>
+  <style>
+    /* ── COULEURS PROF IA : bleu sarcelle ── */
+    :root {
+      --bm-main:  #0f766e;
+      --bm-light: #f0fdfa;
+      --bm-mid:   #99f6e4;
+      --bm-dark:  #115e59;
+    }
+
+    .pia-hero {
+      position: relative;
+      overflow: hidden;
+      padding: 140px 24px 90px;
+      text-align: center;
+      background:
+        radial-gradient(circle at 15% 20%, rgba(153,246,228,0.35) 0, transparent 40%),
+        radial-gradient(circle at 85% 80%, rgba(251,191,36,0.25) 0, transparent 40%),
+        linear-gradient(135deg, var(--bm-dark), var(--bm-main));
+      border-bottom: 4px solid var(--bm-mid);
+    }
+    .pia-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      color: white;
+      font-size: 0.8rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 6px 20px;
+      border-radius: 50px;
+      margin-bottom: 20px;
+    }
+    .pia-hero h1 {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 900;
+      color: #ffffff;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .pia-hero h1 em {
+      font-style: normal;
+      font-family: 'Lora', serif;
+      color: var(--bm-mid);
+      -webkit-text-fill-color: var(--bm-mid);
+      background: none;
+    }
+    .pia-hero p {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.93);
+      max-width: 660px;
+      margin: 0 auto 32px;
+      line-height: 1.75;
+    }
+    .pia-hero-btns { display: flex; flex-wrap: wrap; gap: 14px; justify-content: center; }
+    .pia-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 900;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .pia-btn:hover { transform: translateY(-2px); }
+    .pia-btn-plein { background: white; color: var(--bm-dark); box-shadow: 0 4px 16px rgba(0,0,0,0.18); }
+    .pia-btn-contour { border: 2px solid rgba(255,255,255,0.8); color: white; }
+
+    .pia-content { max-width: 1000px; margin: 0 auto; padding: 80px 24px; }
+
+    .pia-bloc {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 40px 44px;
+      margin-bottom: 32px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+      border-top: 5px solid var(--bm-main);
+    }
+    .pia-bloc h2 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--bm-main);
+      margin-bottom: 12px;
+    }
+    .pia-intro { color: #57534e; line-height: 1.75; margin-bottom: 24px; max-width: 720px; }
+
+    .pia-grille { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .pia-carte {
+      background: var(--bm-light);
+      border-radius: 16px;
+      padding: 24px;
+      border-left: 5px solid var(--bm-main);
+    }
+    .pia-carte .pia-ico { font-size: 1.8rem; margin-bottom: 8px; }
+    .pia-carte h3 { font-size: 1.05rem; font-weight: 900; color: #1c1917; margin-bottom: 8px; }
+    .pia-carte p, .pia-carte li { color: #57534e; font-size: 0.95rem; line-height: 1.7; }
+    .pia-carte ul { padding-left: 18px; margin: 0; }
+
+    /* Captures */
+    .pia-duo { display: grid; grid-template-columns: 1fr 1fr; gap: 36px; align-items: center; }
+    .pia-duo + .pia-duo { margin-top: 48px; }
+    .pia-capture {
+      border-radius: 20px;
+      overflow: hidden;
+      border: 1px solid #e7e5e4;
+      box-shadow: 0 12px 32px rgba(15,118,110,0.15);
+      background: #f5f3ef;
+    }
+    .pia-capture img { display: block; width: 100%; height: auto; }
+    .pia-capture.haut img { height: 520px; object-fit: cover; object-position: top; }
+    .pia-duo h3 { font-size: 1.25rem; font-weight: 900; color: #1c1917; margin-bottom: 10px; }
+    .pia-duo p { color: #57534e; line-height: 1.75; margin-bottom: 12px; }
+    .pia-liste { list-style: none; padding: 0; margin: 0; }
+    .pia-liste li { color: #44403c; line-height: 1.7; padding-left: 28px; position: relative; margin-bottom: 6px; }
+    .pia-liste li::before { content: "✓"; position: absolute; left: 0; color: var(--bm-main); font-weight: 900; }
+
+    /* Étapes */
+    .pia-etapes { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; counter-reset: etape; }
+    .pia-etape { background: var(--bm-light); border-radius: 16px; padding: 22px 20px; }
+    .pia-etape::before {
+      counter-increment: etape;
+      content: counter(etape);
+      display: flex; align-items: center; justify-content: center;
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--bm-main); color: white; font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .pia-etape h3 { font-size: 1rem; font-weight: 900; color: #1c1917; margin-bottom: 6px; }
+    .pia-etape p { color: #57534e; font-size: 0.93rem; line-height: 1.65; }
+
+    .pia-note { font-size: 0.9rem; color: #78716c; margin-top: 20px; line-height: 1.6; }
+
+    /* CTA */
+    .pia-cta {
+      background: linear-gradient(135deg, var(--bm-dark), var(--bm-main));
+      border-radius: 24px;
+      padding: 48px;
+      color: white;
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    .pia-cta h2 { color: white; font-size: 1.6rem; font-weight: 900; margin-bottom: 16px; }
+    .pia-cta p { color: rgba(255,255,255,0.92); font-size: 1.05rem; max-width: 580px; margin: 0 auto 24px; line-height: 1.75; }
+    .pia-cta .pia-conclusion { font-family: 'Lora', serif; font-style: italic; }
+
+    @media (max-width: 860px) {
+      .pia-grille { grid-template-columns: 1fr 1fr; }
+      .pia-etapes { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 640px) {
+      .pia-grille, .pia-etapes, .pia-duo { grid-template-columns: 1fr; }
+      .pia-duo .pia-capture { order: -1; }
+      .pia-capture.haut img { height: 420px; }
+      .pia-bloc { padding: 28px 20px; }
+      .pia-cta { padding: 32px 20px; }
+      .pia-hero { padding: 120px 16px 70px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-banniere.jpeg" alt="Educ'Harmonia" class="logo-img" />
+      <span class="nav-brand-wrap">
+        <span class="nav-brand">Institut Educ'Harmonia</span>
+        <span class="nav-tagline">— 100% en ligne —</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#approche">Notre approche</a></li>
+      <li><a href="index.html#methodes">Nos méthodes</a></li>
+      <li><a href="index.html#classes">Les classes</a></li>
+      <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+      <li><a href="blog/">Blog</a></li>
+      <li><a href="index.html#faq">FAQ</a></li>
+    </ul>
+    <a href="https://wa.me/33759067224" class="btn-nav" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a>
+    <button class="burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="index.html#approche" class="mobile-link">Notre approche</a></li>
+      <li><a href="index.html#methodes" class="mobile-link">Nos méthodes</a></li>
+      <li><a href="index.html#classes" class="mobile-link">Les classes</a></li>
+      <li><a href="index.html#fonctionnement" class="mobile-link">Fonctionnement</a></li>
+      <li><a href="blog/" class="mobile-link">Blog</a></li>
+      <li><a href="index.html#faq" class="mobile-link">FAQ</a></li>
+      <li><a href="https://wa.me/33759067224" class="btn-nav mobile-cta" target="_blank" rel="noopener noreferrer">Inscrire mon enfant</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pia-hero">
+  <div class="pia-badge">🧭 Nouveau · CM2 – 6e</div>
+  <h1>Boussole Maths<br><em>Le soutien en maths pensé pour les profils TDA/H.</em></h1>
+  <p>Fractions, géométrie et mémoire de travail. Des séances courtes, qui ménagent l'attention et soutiennent les fonctions exécutives. Votre enfant y voit simplement un jeu de maths à son rythme.</p>
+  <div class="pia-hero-btns">
+    <a href="https://wa.me/33759067224?text=Bonjour%2C%20je%20souhaite%20essayer%20Prof%20IA%20Maths." class="pia-btn pia-btn-plein" target="_blank" rel="noopener noreferrer">💬 Demander un accès</a>
+    <a href="#comment" class="pia-btn pia-btn-contour">Comment ça marche ?</a>
+  </div>
+</section>
+
+<div class="pia-content">
+
+  <!-- Ce que l'enfant travaille -->
+  <section class="pia-bloc reveal" aria-labelledby="t-quoi">
+    <h2 id="t-quoi">📚 Ce que votre enfant travaille</h2>
+    <p class="pia-intro">Trois domaines clés pour réussir l'entrée au collège. Chaque exercice existe en 5 niveaux.</p>
+    <div class="pia-grille">
+      <div class="pia-carte">
+        <div class="pia-ico">🍕</div>
+        <h3>Les fractions</h3>
+        <ul>
+          <li>Colorier et lire une fraction</li>
+          <li>Placer sur une droite graduée</li>
+          <li>Fraction d'une quantité</li>
+          <li>Comparer à 1, fractions égales</li>
+        </ul>
+      </div>
+      <div class="pia-carte">
+        <div class="pia-ico">📐</div>
+        <h3>La géométrie</h3>
+        <ul>
+          <li>Les angles</li>
+          <li>La symétrie</li>
+          <li>Périmètre et aire</li>
+          <li>Droites et figures</li>
+        </ul>
+      </div>
+      <div class="pia-carte">
+        <div class="pia-ico">🐘</div>
+        <h3>La mémoire de travail</h3>
+        <ul>
+          <li>Calcul en chaîne, chiffres à retenir</li>
+          <li>Cases lumineuses</li>
+          <li>Mots et phrases à retenir</li>
+          <li>Mot flash pour l'orthographe</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pourquoi c'est différent -->
+  <section class="pia-bloc reveal" aria-labelledby="t-pourquoi">
+    <h2 id="t-pourquoi">✨ Pourquoi c'est différent</h2>
+    <p class="pia-intro">Boussole Maths suit la méthode du cahier de soutien d'Educ'Harmonia : concret, imagé, puis abstrait.</p>
+    <div class="pia-grille">
+      <div class="pia-carte">
+        <div class="pia-ico">🎯</div>
+        <h3>Il s'adapte</h3>
+        <p>Le niveau monte quand ça réussit. Il redescend en douceur en cas de blocage. Vous pouvez aussi le fixer vous-même.</p>
+      </div>
+      <div class="pia-carte">
+        <div class="pia-ico">⏱️</div>
+        <h3>Des séances courtes</h3>
+        <p>De 5 à 15 minutes, avec des pauses. Une consigne à la fois, lue à voix haute si besoin.</p>
+      </div>
+      <div class="pia-carte">
+        <div class="pia-ico">🪤</div>
+        <h3>Il repère les pièges</h3>
+        <p>Une erreur qui revient devient un « piège ». L'enfant reçoit une astuce et apprend à le dompter.</p>
+      </div>
+      <div class="pia-carte">
+        <div class="pia-ico">💛</div>
+        <h3>Bienveillant</h3>
+        <p>Jamais de note rouge. Des indices progressifs et un bouton SOS. On valorise la méthode, pas la vitesse.</p>
+      </div>
+      <div class="pia-carte">
+        <div class="pia-ico">✅</div>
+        <h3>Des calculs fiables</h3>
+        <p>Toutes les corrections sont calculées par le programme. L'IA ne fait jamais les calculs.</p>
+      </div>
+      <div class="pia-carte">
+        <div class="pia-ico">🔒</div>
+        <h3>Respect de la vie privée</h3>
+        <p>Un prénom ou un surnom suffit. Aucune publicité. Aucun diagnostic n'est enregistré.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Captures -->
+  <section class="pia-bloc reveal" aria-labelledby="t-apercu">
+    <h2 id="t-apercu">👀 Un aperçu</h2>
+
+    <div class="pia-duo">
+      <div>
+        <h3>Des exercices clairs et visuels</h3>
+        <p>Une question à la fois, avec un dessin pour comprendre. L'enfant dit aussi s'il est sûr de lui.</p>
+        <ul class="pia-liste">
+          <li>Indices en plusieurs étapes</li>
+          <li>Consignes lues à voix haute</li>
+          <li>Étapes visibles pour s'organiser</li>
+        </ul>
+      </div>
+      <div class="pia-capture"><img src="boussole-fractions.png" alt="Exercice : ranger la fraction 8 sur 4 par rapport à 1, avec des barres colorées" width="820" height="1100" loading="lazy" /></div>
+    </div>
+
+    <div class="pia-duo">
+      <div class="pia-capture haut"><img src="boussole-carte.png" alt="Carte de l'enfant : avatar, centres d'intérêt, progrès et badges" width="820" height="1311" loading="lazy" /></div>
+      <div>
+        <h3>Sa carte personnelle</h3>
+        <p>Votre enfant choisit son avatar et ses couleurs. Sa carte montre ses progrès et ses badges.</p>
+        <ul class="pia-liste">
+          <li>Ce qu'il aime, ce qui l'aide</li>
+          <li>Badges de régularité et de méthode</li>
+          <li>Carte imprimable</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pia-duo">
+      <div>
+        <h3>Un bilan réservé aux parents</h3>
+        <p>Vous voyez d'un coup d'œil ses points forts et ce qu'il faut retravailler.</p>
+        <ul class="pia-liste">
+          <li>Les 3 priorités, avec les raisons</li>
+          <li>Un clic pour les mettre en avant</li>
+          <li>Plusieurs enfants sur le même appareil</li>
+        </ul>
+      </div>
+      <div class="pia-capture haut"><img src="boussole-bilan.png" alt="Bilan parent : en bref, compétences à travailler en priorité, points forts" width="820" height="2525" loading="lazy" /></div>
+    </div>
+  </section>
+
+  <!-- Comment ça marche -->
+  <section class="pia-bloc reveal" id="comment" aria-labelledby="t-comment">
+    <h2 id="t-comment">🚀 Comment ça marche</h2>
+    <div class="pia-etapes">
+      <div class="pia-etape">
+        <h3>Inscrivez votre enfant</h3>
+        <p>Un prénom, un avatar, sa classe et ce qui l'aide.</p>
+      </div>
+      <div class="pia-etape">
+        <h3>Il choisit sa séance</h3>
+        <p>Maths, Mémoire, ou Mélange des deux.</p>
+      </div>
+      <div class="pia-etape">
+        <h3>Il progresse</h3>
+        <p>Le niveau s'ajuste à chaque exercice réussi.</p>
+      </div>
+      <div class="pia-etape">
+        <h3>Vous suivez</h3>
+        <p>Le bilan vous dit quoi retravailler ensuite.</p>
+      </div>
+    </div>
+    <p class="pia-note">Fonctionne sur ordinateur et tablette, dans le navigateur. Boussole Maths est un outil d'entraînement. Il ne remplace ni un enseignant, ni un suivi médical ou orthophonique.</p>
+  </section>
+
+  <!-- CTA -->
+  <section class="pia-cta reveal" aria-labelledby="t-cta">
+    <h2 id="t-cta">🌱 Envie de l'essayer ?</h2>
+    <p>Boussole Maths est en phase de lancement. Écrivez-nous pour obtenir un accès pour votre enfant.</p>
+    <p class="pia-conclusion">Chaque enfant peut réussir en maths, à son rythme.</p>
+    <a href="https://wa.me/33759067224?text=Bonjour%2C%20je%20souhaite%20essayer%20Prof%20IA%20Maths." class="pia-btn pia-btn-plein" target="_blank" rel="noopener noreferrer">💬 Demander un accès</a>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo-wrap">
+        <img src="logo-banniere.jpeg" alt="Educ'Harmonia" class="footer-logo" />
+        <span>Educ'Harmonia</span>
+      </div>
+      <p>École primaire 100% en ligne, de la Grande Section au CM2.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html#approche">Notre approche</a></li>
+        <li><a href="index.html#methodes">Nos méthodes</a></li>
+        <li><a href="index.html#classes">Les classes</a></li>
+        <li><a href="index.html#fonctionnement">Fonctionnement</a></li>
+        <li><a href="blog/">Blog</a></li>
+        <li><a href="index.html#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><a href="mailto:contact@educ-harmonia.com">📧 contact@educ-harmonia.com</a></li>
+        <li><a href="https://wa.me/33759067224" target="_blank" rel="noopener noreferrer">📱 07 59 06 72 24</a></li>
+        <li>🌐 www.educ-harmonia.com</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Educ'Harmonia — Tous droits réservés</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
