@@ -142,6 +142,23 @@
       color: var(--cp-main);
       margin-bottom: 20px;
     }
+    /* Jeu Les Explorateurs des nombres */
+    .cp-jeu { background: linear-gradient(135deg, #e0f2fe, #fff7ed); border-top-color: #0ea5e9; }
+    .cp-jeu .cp-bloc-tag { color: #0369a1; }
+    .cp-jeu-points { list-style: none; padding: 0; margin: 0 0 28px; display: grid; gap: 10px; color: #44403c; line-height: 1.6; }
+    .cp-jeu-btn {
+      display: inline-block;
+      background: #f43f5e;
+      color: white;
+      font-weight: 900;
+      font-size: 1.05rem;
+      padding: 14px 34px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(244,63,94,0.3);
+      transition: transform 0.2s;
+    }
+    .cp-jeu-btn:hover { transform: translateY(-2px); }
     .cp-bloc h2 {
       font-size: 1.5rem;
       font-weight: 900;
@@ -372,6 +389,20 @@
         <p>Au CP, nous approfondissons la résolution de problèmes. Grâce à la manipulation de matériel concret (cubes, barres), les concepts de dizaines, d'unités et d'additions deviennent visuels et logiques avant d'être posés sur le papier.</p>
       </div>
     </div>
+  </div>
+
+  <!-- Jeu Les Explorateurs des nombres -->
+  <div class="cp-bloc cp-jeu reveal">
+    <div class="cp-bloc-tag">🎮 Nouveau : le jeu Les Explorateurs des nombres</div>
+    <h2>Les maths du CP avec la méthode de Singapour, en jouant avec Lumy</h2>
+    <p style="color:#57534e;line-height:1.75;margin-bottom:20px;">Un jeu gratuit pour prolonger la méthode de Singapour à la maison, sur tablette ou ordinateur. Votre enfant explore 8 îles : les nombres jusqu'à 20 puis jusqu'à 100, les liens nombres, « faire 10 » pour calculer, les problèmes avec le <strong>modèle en barres</strong>, les longueurs et les formes, les euros et l'heure, les groupes et les partages. Chaque notion passe du <strong>concret</strong> à l'<strong>image</strong> puis au <strong>nombre</strong>, comme en classe.</p>
+    <ul class="cp-jeu-points">
+      <li>🗣️ Consignes et histoires lues à voix haute : pas besoin de bien lire pour faire des maths.</li>
+      <li>🤝 Lumy montre, on fait ensemble, puis votre enfant essaie seul quand c'est bien compris.</li>
+      <li>📊 Un bilan bienveillant pour les parents et des fiches à imprimer.</li>
+      <li>🔒 Sans compte, sans publicité extérieure, aucune donnée envoyée.</li>
+    </ul>
+    <a href="explorateurs-nombres/" class="cp-jeu-btn">▶ Jouer aux Explorateurs des nombres</a>
   </div>
 
   <!-- Soroban -->
