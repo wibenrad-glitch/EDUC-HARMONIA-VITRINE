@@ -2,7 +2,7 @@
  * Les Explorateurs des nombres : mise en cache pour jouer sans réseau.
  * Changer VERSION à chaque mise en ligne force la mise à jour du cache.
  */
-const VERSION = 'explorateurs-nombres-v2';
+const VERSION = 'explorateurs-nombres-v3';
 const BASE = new URL('./', self.location).href;
 const POLICES = ['https://fonts.googleapis.com', 'https://fonts.gstatic.com'];
 
